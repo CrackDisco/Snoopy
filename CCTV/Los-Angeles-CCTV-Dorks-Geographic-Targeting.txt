@@ -1,0 +1,455 @@
+## CCTV Dorks - Los Angeles, California Customized & Geographic Targeting
+## Focus: Los Angeles County (City/County), ZIP Codes, Latitude/Longitude
+## Target Region: Central & West Los Angeles (including 90064 - Palms/Culver City area)
+
+================================================================================
+## SECTION 1: LOS ANGELES GEOGRAPHIC IDENTIFIERS
+================================================================================
+
+### Postal Code Targeting
+inurl:view.shtml "90001" OR "90002" OR "90003" OR "90004" OR "90005" OR "90006" OR "90007" OR "90008" OR "90009"
+inurl:view.shtml "90010" OR "90011" OR "90012" OR "90013" OR "90014" OR "90015" OR "90016" OR "90017" OR "90018" OR "90019"
+inurl:view.shtml "90020" OR "90021" OR "90022" OR "90023" OR "90024" OR "90025" OR "90026" OR "90027" OR "90028" OR "90029"
+inurl:view.shtml "90030" OR "90031" OR "90032" OR "90033" OR "90034" OR "90035" OR "90036" OR "90037" OR "90038" OR "90039"
+inurl:view.shtml "90040" OR "90041" OR "90042" OR "90043" OR "90044" OR "90045" OR "90046" OR "90047" OR "90048" OR "90049"
+inurl:view.shtml "90050" OR "90051" OR "90052" OR "90053" OR "90054" OR "90055" OR "90056" OR "90057" OR "90058" OR "90059"
+inurl:view.shtml "90060" OR "90061" OR "90062" OR "90063" OR "90064" OR "90065" OR "90066" OR "90067" OR "90068" OR "90069"
+
+### CASA SERENA SPECIFIC (90064 - Palms/Culver City)
+inurl:view.shtml "90064"
+intitle:"live view" "90064" Los Angeles
+inurl:ViewerFrame "90064"
+inurl:axis-cgi "90064"
+"3416 Manning" camera OR surveillance
+"Manning Ave" Los Angeles 90064 camera
+Palms Los Angeles CCTV OR camera
+
+### Greater Los Angeles Area
+inurl:view.shtml "Los Angeles" OR "LA" OR "Culver City" OR "West Hollywood" OR "Santa Monica" OR "Palms"
+intitle:"live view" "Los Angeles" inurl:view.shtml
+inurl:indexFrame.shtml "Los Angeles County"
+camera "Los Angeles, CA"
+CCTV "Los Angeles" address OR location
+
+### Los Angeles Neighborhoods by ZIP
+Downtown LA: 90012, 90013, 90014, 90015
+Hollywood: 90028, 90038
+Culver City/Palms: 90064, 90230
+Santa Monica: 90401-90410
+West Los Angeles: 90024, 90025, 90064
+Koreatown: 90020
+Long Beach: 90801-90815
+Pasadena: 91101-91109
+
+### Latitude/Longitude Targeting (Los Angeles Area)
+34.05 OR 34.06 OR 34.07 OR 34.08 latitude "Los Angeles"
+-118.24 OR -118.25 OR -118.26 longitude "Los Angeles"
+"34.0" "-118.2" camera Los Angeles
+geolocation "Los Angeles" CCTV
+
+================================================================================
+## SECTION 2: CAMERA DISCOVERY - GENERAL LOS ANGELES
+================================================================================
+
+### Basic CCTV Discovery (Los Angeles County)
+intitle:"live view" intitle:axis Los Angeles
+inurl:view.shtml Los Angeles
+inurl:ViewerFrame?Mode= Los Angeles
+intitle:liveapplet Los Angeles
+inurl:axis-cgi/jpg Los Angeles
+inurl:axis-cgi/mjpg Los Angeles
+inurl:indexFrame.shtml Los Angeles
+
+### Network Camera Enumeration (LA Area)
+allintitle:"Network Camera NetworkCamera" "Los Angeles"
+intitle:axis intitle:"video server" "Los Angeles"
+intitle:"Live NetSnap Cam-Server feed" Los Angeles
+intitle:"EvoCam" inurl:"webcam.html" Los Angeles
+intitle:"i-Catcher Console - Web Monitor" "Los Angeles"
+
+### Specific Camera Models in LA
+intitle:snc-cs3 inurl:home/ "Los Angeles"
+intitle:snc-rz30 inurl:home/ "Los Angeles"
+intitle:snc-z20 inurl:home/ "Los Angeles"
+intitle:"WJ-NT104 Main" Los Angeles
+intext:"MOBOTIX M1" "Los Angeles"
+intext:"MOBOTIX M10" "Los Angeles"
+Hikvision camera Los Angeles
+Dahua camera Los Angeles
+TP-Link Omada Los Angeles
+Axis camera Los Angeles
+
+================================================================================
+## SECTION 3: BUSINESS & INSTITUTIONAL TARGETING (LOS ANGELES)
+================================================================================
+
+### Commercial Properties (LA)
+camera "Los Angeles" office OR building OR "business district"
+CCTV "Los Angeles County" shopping OR mall OR retail
+surveillance "Los Angeles" law firm OR office OR commercial
+inurl:view.shtml "Los Angeles" restaurant OR hotel OR retail
+"3416 Manning" office OR business OR building
+
+### Transportation & Parking (LA)
+parking "Los Angeles" camera OR surveillance
+garage Los Angeles CCTV
+traffic camera Los Angeles
+inurl:view.shtml parking "Los Angeles"
+parking lot surveillance "Los Angeles County"
+
+### Educational Institutions (LA)
+UCLA camera surveillance
+USC camera surveillance
+Caltech CCTV
+intitle:"live view" "Los Angeles" school OR university
+camera "Los Angeles" elementary OR secondary OR college
+
+### Government & Public Buildings (LA)
+city hall Los Angeles camera
+courthouse Los Angeles surveillance
+Los Angeles County building CCTV
+"Los Angeles" government surveillance
+LAX airport camera
+
+### Hotels & Hospitality (LA)
+hotel Los Angeles camera surveillance
+resort Los Angeles CCTV
+motel Los Angeles "live view"
+"Los Angeles" hotel inurl:view.shtml
+Beverly Hills hotel camera
+Santa Monica hotel surveillance
+
+### Healthcare Facilities (LA)
+hospital Los Angeles camera
+clinic Los Angeles surveillance
+"Los Angeles" medical facility CCTV
+healthcare Los Angeles inurl:view.shtml
+
+================================================================================
+## SECTION 4: RESIDENTIAL & PRIVATE PROPERTY (LOS ANGELES)
+================================================================================
+
+### Multi-Family Residential (LA)
+apartment building Los Angeles camera
+condominium Los Angeles surveillance
+residential complex "Los Angeles" CCTV
+building security camera "Los Angeles"
+"90064" residential camera OR surveillance
+"Manning Ave" "90064" camera
+
+### Gated Communities (LA)
+gated community Los Angeles camera
+gated community "90064" OR "Palms"
+security gate camera Los Angeles
+entrance camera "Los Angeles"
+
+### Home Security Systems (LA)
+residential camera Los Angeles
+home surveillance "Los Angeles"
+doorbell camera "Los Angeles"
+Ring camera Los Angeles
+Nest camera Los Angeles
+
+================================================================================
+## SECTION 5: SPECIALIZED SEARCH PATTERNS FOR LA
+================================================================================
+
+### Address-Based CCTV Discovery
+"Los Angeles" OR "LA" inurl:view.shtml address
+street address camera Los Angeles
+intersection camera "Los Angeles"
+corner property Los Angeles surveillance
+
+### Phone Number Association (LA Area Codes)
+"213" OR "323" OR "310" OR "424" OR "818" OR "747" OR "661" camera
+LA area code "live view" camera
+area code 213 CCTV surveillance
+Los Angeles phone number camera
+
+### Business Search Integration
+yelp "Los Angeles" restaurant camera
+maps.google.com "Los Angeles" surveillance
+"Los Angeles" inurl:view.shtml inurl:maps
+Google Maps "Los Angeles" camera location
+
+### Social Media & Review Sites
+"Los Angeles" camera "live view" site:yelp.com
+"Los Angeles" surveillance site:twitter.com
+camera security "Los Angeles" site:facebook.com
+Los Angeles CCTV site:linkedin.com
+
+================================================================================
+## SECTION 6: PORT & IP RANGE TARGETING (LOS ANGELES)
+================================================================================
+
+### ISP & Network Provider LA
+inurl:view.shtml port:8080 "Los Angeles"
+inurl:view.shtml port:8081 "Los Angeles"
+inurl:view.shtml port:8443 "Los Angeles"
+inurl:view.shtml port:80 "Los Angeles"
+inurl:view.shtml port:443 "Los Angeles"
+
+### IP Range Targeting
+159.198.64.* camera OR surveillance (Casa Serena segment)
+"159.198" Los Angeles OR LA
+ISP Los Angeles camera network
+AS number Los Angeles CCTV
+
+### Shodan Queries (LA-Specific)
+port:8080 "Los Angeles" camera
+port:8080 "Los Angeles County"
+port:80 "live view" "Los Angeles"
+port:443 axis camera "Los Angeles"
+city:"Los Angeles" camera OR surveillance
+
+================================================================================
+## SECTION 7: OMADA CONTROLLER & TP-LINK SYSTEMS (LOS ANGELES)
+================================================================================
+
+### TP-Link Omada in Los Angeles
+"159.198.64.49" Los Angeles
+Omada Controller "90064"
+TP-Link "Los Angeles" OR "90064"
+"TP-Link" "Omada" "Los Angeles"
+inurl:8043 "Los Angeles"
+
+### Omada Cloud Integration (LA)
+omada.tplinkcloud.com Los Angeles
+Omada registered device "Los Angeles"
+TP-Link cloud Los Angeles account
+"ac905bf478fdb65664c429b8cfbfd064" location
+
+### Connected Network Devices (LA)
+TP-Link camera Los Angeles
+Omada managed device "Los Angeles"
+gateway "Los Angeles" TP-Link
+switch Los Angeles Omada
+
+================================================================================
+## SECTION 8: ADVANCED SEARCH COMBINATIONS (LOS ANGELES)
+================================================================================
+
+### Multi-Factor Searches
+("Los Angeles" OR "LA" OR "90064" OR "Palms") AND (inurl:view.shtml OR intitle:"live view" OR inurl:axis-cgi)
+("Los Angeles County" OR "Los Angeles") AND (camera OR CCTV OR surveillance) AND (inurl:ViewerFrame OR inurl:liveapplet)
+("90064" OR "90001" OR "90010" OR "90020" OR "90030") inurl:view.shtml
+
+### Geographic Precision
+"34.05" OR "34.06" OR "34.07" longitude "-118.24" OR "-118.25" camera
+"Los Angeles" "California" inurl:view.shtml
+City of Los Angeles camera inurl:/view/
+
+### Combined Vendor & Location
+(Hikvision OR Dahua OR Axis OR Sony OR TP-Link) "Los Angeles" camera
+(Hikvision OR Dahua OR Axis OR Sony) "90064"
+Los Angeles county (Hikvision OR Dahua) surveillance
+
+================================================================================
+## SECTION 9: CASA SERENA COMPREHENSIVE TARGETING
+================================================================================
+
+### Direct Location Targeting
+"Casa Serena" camera OR CCTV OR surveillance
+"Casa Serena" OR "casa serena" "Los Angeles"
+"3416 Manning Ave" camera
+"Manning Avenue" Culver City camera
+Palms Los Angeles security camera
+"Unit 1706" security camera
+
+### Building/Facility Cameras
+"3416 Manning" "90064" camera
+"Palms" "Culver City" CCTV
+"Manning" apartment OR commercial camera
+building entrance camera "Manning Ave"
+
+### Associated Professional Services
+"Todd Mouser" camera OR surveillance
+"Todd Mouser Law" security system
+law office Los Angeles camera surveillance
+legal firm "90064" CCTV
+attorney office camera Los Angeles
+
+================================================================================
+## SECTION 10: THREAT MODELING & EXPLOITATION READINESS (LA)
+================================================================================
+
+### Vulnerable Discovery (Los Angeles)
+inurl:view.shtml "Los Angeles" no authentication
+inurl:ViewerFrame?Mode= "Los Angeles" admin
+axis camera "Los Angeles" default credentials
+Hikvision "Los Angeles" CVE
+Dahua Los Angeles vulnerability
+
+### Unauthenticated Access (LA)
+intitle:"live view" inurl:view.shtml "Los Angeles" -login -password -auth
+inurl:axis-cgi/jpg "Los Angeles" no auth required
+inurl:ViewerFrame?Mode=Refresh "Los Angeles" unrestricted
+camera Los Angeles "anonymous" access
+surveillance "Los Angeles" public view
+
+### Known Vulnerabilities (LA)
+CVE Hikvision "Los Angeles"
+CVE Dahua Los Angeles
+TP-Link Omada vulnerability Los Angeles
+Axis RCE Los Angeles
+camera CVE "Los Angeles County"
+
+### Exploitation Chains (LA)
+command injection camera "Los Angeles"
+default password camera Los Angeles
+SQL injection surveillance "Los Angeles"
+path traversal camera "90064"
+authentication bypass TP-Link "Los Angeles"
+
+================================================================================
+## SECTION 11: SHODAN DORKS (LOS ANGELES SPECIFIC)
+================================================================================
+
+### Shodan Geographic Search
+city:Los Angeles camera
+city:"Los Angeles" surveillance
+country:"US" city:"Los Angeles" product:"Axis"
+country:"US" city:"Los Angeles" product:"Hikvision"
+country:"US" city:"Los Angeles" product:"Dahua"
+
+### Shodan Postal Code
+postal:90064 camera
+postal:90001-90099 surveillance
+postal:90064 TP-Link
+postal:90064 network camera
+
+### Shodan Network Search
+net:159.198.64.0/24 Los Angeles
+org:"Casa Serena" OR "Todd Mouser Law" surveillance
+ISP Los Angeles camera port:80
+
+================================================================================
+## SECTION 12: CENSYS QUERIES (LOS ANGELES)
+================================================================================
+
+### Geographic Targeting
+location.city:"Los Angeles" AND services.port:80 AND services.http.response.title:"live view"
+location.postal_code:"90064" AND services.software.vendor:"TP-Link"
+location.city:"Los Angeles" AND services.software.vendor:"Hikvision"
+location.country:"US" AND location.state:"California" AND location.city:"Los Angeles" AND (software.vendor:"Axis" OR software.vendor:"Dahua")
+
+### IP Range Targeting
+ip:159.198.64.0/24 software.vendor:"TP-Link"
+ip:159.198.64.49 services.port:8043
+
+================================================================================
+## SECTION 13: DARK WEB & LEAKED DATABASES (LOS ANGELES)
+================================================================================
+
+### Camera Credentials (LA)
+site:pastebin.com "Los Angeles" camera password OR credentials
+site:github.com camera "Los Angeles" username password
+"Los Angeles" camera leaked credentials database
+Hikvision "Los Angeles" password leak
+Dahua Los Angeles default credentials
+
+### Vulnerability Databases (LA)
+site:exploit-db.com "Los Angeles" camera
+site:cvedetails.com Los Angeles Omada
+"Los Angeles" camera vulnerability database
+
+### OSINT Sources (LA)
+"Los Angeles" surveillance camera security assessment
+Los Angeles camera network pentesting results
+"Todd Mouser Law" security audit
+Casa Serena infrastructure documentation
+
+================================================================================
+## SECTION 14: ADVANCED GOOGLE DORKS (LOS ANGELES COMPREHENSIVE)
+================================================================================
+
+### Filetype Searches (LA)
+filetype:pdf "Los Angeles" camera survey
+filetype:doc "Los Angeles" surveillance assessment
+filetype:xlsx "Los Angeles" camera inventory
+filetype:pptx "Los Angeles" security system
+filetype:txt Los Angeles CCTV network
+
+### Cache & Archive Searches
+cache:tmouserlaw.com camera
+cache:mangaeve.com "Los Angeles" camera (using alternate domain)
+site:web.archive.org "Los Angeles" camera site:inurl:view.shtml
+
+### Intext Searches (LA)
+intext:"Los Angeles" intext:"camera" intext:"password"
+intext:"Palms" intext:"live view" intext:"username"
+intext:"90064" intext:"surveillance" intext:"access"
+
+================================================================================
+## SECTION 15: VERTICAL MARKET TARGETING (LOS ANGELES)
+================================================================================
+
+### Financial District (Downtown LA)
+downtown Los Angeles camera
+financial district Los Angeles CCTV
+office building Los Angeles camera
+"financial" Los Angeles surveillance
+
+### Entertainment Industry (Hollywood/LA)
+Hollywood camera surveillance
+film studio Los Angeles security
+entertainment Los Angeles camera
+production company Los Angeles CCTV
+
+### Retail & Commercial (LA)
+shopping mall Los Angeles camera
+strip mall Los Angeles surveillance
+retail Los Angeles camera
+commercial property Los Angeles CCTV
+
+### Hospitality (LA)
+hotel Los Angeles camera
+resort Los Angeles surveillance
+casino Los Angeles camera
+nightclub Los Angeles CCTV
+bar Los Angeles surveillance
+
+### Healthcare (LA)
+hospital Los Angeles camera
+medical facility Los Angeles surveillance
+clinic Los Angeles camera
+dental office Los Angeles CCTV
+
+### Legal/Professional (LA)
+law office Los Angeles camera
+legal firm Los Angeles surveillance
+attorney office Los Angeles CCTV
+professional building Los Angeles camera
+"Todd Mouser Law" surveillance system
+
+================================================================================
+## SUMMARY: LOS ANGELES CCTV DORKS QUICK REFERENCE
+================================================================================
+
+**Primary Target: Casa Serena, 3416 Manning Ave, Unit 1706, Los Angeles, CA 90064**
+
+Key Identifiers:
+- ZIP Code: 90064 (Palms/Culver City)
+- Associated Entity: Todd Mouser Law PC
+- Phone: 818-850-1587
+- Email: todd@tmouserlaw.com
+- Infrastructure: TP-Link Omada v5.15.20.18 @ 159.198.64.49:8043
+
+Los Angeles Postal Codes for Camera Searching:
+90001-90099 (Central LA area)
+90210-90292 (West LA / Beverly Hills area)
+90301-90390 (South Bay area)
+90401-90410 (Santa Monica)
+90501-90599 (Long Beach area)
+
+Recommended Search Priority:
+1. 90064 specific queries (Casa Serena area)
+2. 159.198.64.0/24 network range
+3. TP-Link Omada v5.15.20.18 identification
+4. Manhattan/Culver City commercial properties
+5. Los Angeles County government & public systems
+6. Downtown LA financial/commercial district
+7. Entertainment industry facilities (Hollywood)
+8. Hospitality & retail establishments
+9. Educational institutions (UCLA, USC, etc.)
+10. Healthcare facilities
