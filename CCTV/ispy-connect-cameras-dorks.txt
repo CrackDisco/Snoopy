@@ -1,0 +1,147 @@
+# iSpy Connect Supported Cameras Google Dorks
+# Advanced security research queries for IP cameras indexed by iSpy Connect
+# Use only for authorized security testing and ethical hacking
+
+# Hikvision Cameras
+intitle:"Hikvision" inurl:dashboard
+intitle:"Hikvision" inurl:/doc/page/login
+intitle:"Hikvision IP Camera" inurl:web
+intext:"Hikvision" inurl:streaming inurl:live
+intitle:"Hikvision" inurl:ISAPI
+intitle:"Hikvision DS-2CD" inurl:web
+inurl:hikvision inurl:rtsp
+intitle:"Hikvision" inurl:mjpeg
+intext:"Hikvision" "device ID" inurl:web
+intitle:"Hikvision" inurl:/api/
+intitle:"Hikvision IP Camera" "live view"
+inurl:hikvision inurl:config
+intitle:"Hikvision" inurl:snapshot
+inurl:hikvision inurl:playback
+intitle:"Hikvision" inurl:event
+
+# Dahua Cameras
+intitle:"Dahua" inurl:web inurl:interface
+intitle:"Dahua IP Camera" inurl:login
+intext:"Dahua" inurl:streaming
+intitle:"Dahua" inurl:mjpeg
+inurl:dahua inurl:rtsp
+intitle:"Dahua" inurl:dashboard
+intext:"Dahua" "live view" inurl:web
+intitle:"Dahua IP Camera" inurl:config
+inurl:dahua inurl:snapshot
+intitle:"Dahua" inurl:/api/
+intext:"Dahua" inurl:playback
+intitle:"Dahua" inurl:device/info
+inurl:dahua inurl:event/log
+intitle:"Dahua" inurl:upgrade
+
+# Axis Communications
+intitle:"Axis" inurl:web
+intitle:"Axis IP Camera" inurl:live
+intext:"Axis Communications" inurl:streaming
+intitle:"Axis" inurl:mjpeg
+inurl:axis inurl:video
+intitle:"Axis" inurl:rtsp
+intext:"Axis" inurl:snapshot
+intitle:"Axis IP Camera" inurl:setup
+inurl:axis inurl:param
+intitle:"Axis" inurl:admin
+intext:"Axis" "live view" inurl:web
+intitle:"Axis Camera" inurl:config
+inurl:axis inurl:cgi-bin
+intitle:"Axis" inurl:status
+
+# Amcrest Cameras
+intitle:"Amcrest" inurl:web inurl:interface
+intitle:"Amcrest IP Camera" inurl:login
+intext:"Amcrest" inurl:streaming
+intitle:"Amcrest" inurl:mjpeg
+inurl:amcrest inurl:rtsp
+intitle:"Amcrest" inurl:snapshot
+intext:"Amcrest" "live view" inurl:web
+intitle:"Amcrest IP Camera" inurl:config
+inurl:amcrest inurl:playback
+intitle:"Amcrest" inurl:/api/
+intext:"Amcrest" inurl:device/info
+intitle:"Amcrest" inurl:event
+
+# Foscam Cameras
+intitle:"Foscam" inurl:web
+intitle:"Foscam IP Camera" inurl:login
+intext:"Foscam" inurl:streaming
+intitle:"Foscam" inurl:mjpeg
+inurl:foscam inurl:video.cgi
+intitle:"Foscam" inurl:snapshot
+intext:"Foscam" "live view"
+intitle:"Foscam" inurl:config
+inurl:foscam inurl:device
+intitle:"Foscam IP Camera" inurl:admin
+intext:"Foscam" inurl:playback
+intitle:"Foscam" inurl:/api/
+
+# Reolink Cameras
+intitle:"Reolink" inurl:web inurl:interface
+intitle:"Reolink IP Camera" inurl:login
+intext:"Reolink" inurl:streaming
+intitle:"Reolink" inurl:mjpeg
+inurl:reolink inurl:rtsp
+intitle:"Reolink" inurl:snapshot
+intext:"Reolink" "live view" inurl:web
+intitle:"Reolink" inurl:config
+inurl:reolink inurl:playback
+intitle:"Reolink IP Camera" inurl:/api/
+intext:"Reolink" inurl:device/info
+intitle:"Reolink" inurl:event
+
+# D-Link Cameras
+intitle:"D-Link" inurl:web inurl:camera
+intitle:"D-Link IP Camera" inurl:login
+intext:"D-Link" inurl:streaming
+intitle:"D-Link" inurl:mjpeg
+inurl:"d-link" inurl:rtsp
+intitle:"D-Link" inurl:snapshot
+intext:"D-Link" "live view"
+intitle:"D-Link" inurl:config
+inurl:"d-link" inurl:admin
+
+# TP-Link Cameras
+intitle:"TP-Link" inurl:web
+intitle:"TP-Link IP Camera" inurl:login
+intext:"TP-Link" inurl:streaming
+intitle:"TP-Link" inurl:mjpeg
+inurl:"tp-link" inurl:video
+intitle:"TP-Link" inurl:snapshot
+intext:"TP-Link" "live view"
+intitle:"TP-Link" inurl:config
+inurl:"tp-link" inurl:device
+
+# Ubiquiti UniFi Cameras
+intitle:"Ubiquiti" inurl:unifi
+intitle:"UniFi Camera" inurl:web
+intext:"Ubiquiti UniFi" inurl:streaming
+intitle:"UniFi" inurl:mjpeg
+inurl:ubiquiti inurl:video
+intitle:"UniFi Camera" inurl:live
+intext:"UniFi" inurl:snapshot
+intitle:"Ubiquiti" inurl:admin
+inurl:unifi inurl:protect
+
+# Vivotek Cameras
+intitle:"Vivotek" inurl:web
+intitle:"Vivotek IP Camera" inurl:login
+intext:"Vivotek" inurl:streaming
+intitle:"Vivotek" inurl:mjpeg
+inurl:vivotek inurl:video
+intitle:"Vivotek" inurl:snapshot
+intext:"Vivotek" "live view"
+intitle:"Vivotek" inurl:config
+
+# Generic ONVIF Cameras
+intitle:"ONVIF" inurl:web
+intitle:"ONVIF IP Camera" inurl:device
+intext:"ONVIF" inurl:streaming
+intitle:"ONVIF" inurl:service
+inurl:onvif inurl:media
+intitle:"ONVIF" inurl:snapshot
+intext:"ONVIF" "live stream"
+intitle:"ONVIF" inurl:event
