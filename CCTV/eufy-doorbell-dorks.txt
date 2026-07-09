@@ -1,0 +1,206 @@
+# Eufy Doorbell Camera Google Dorks
+# Advanced security research queries for Eufy doorbell systems
+# Use only for authorized security testing and ethical hacking
+
+# Basic Brand & Product Recognition
+intitle:"Eufy" intitle:"Doorbell"
+intitle:"Eufy Video Doorbell" inurl:dashboard
+intitle:"Eufy Security" doorbell live
+intext:"Eufy" intext:"doorbell" intext:"live stream"
+title:"Eufy Doorbell" -inurl:ebay -inurl:amazon
+intitle:"Eufy" "video doorbell" "welcome to"
+site:eufy.com OR site:eufylife.com doorbell
+intext:"Powered by Eufy" doorbell
+intitle:"Eufy Doorbell" "HTTP/1.1"
+"Eufy" "doorbell" "IP address" "192.168"
+title:"Eufy" "video" "real-time"
+intitle:"Eufy Doorbell 2K" OR "Eufy Doorbell Pro"
+intext:"Eufy HomeBase" doorbell
+intitle:"Eufy" doorbell "motion detection"
+"Eufy" "security system" doorbell
+
+# Web Interface & Dashboard Access
+inurl:eufy.com inurl:dashboard
+inurl:/eufy/dashboard
+intitle:"Eufy" inurl:/admin
+intitle:"Eufy Doorbell" inurl:login
+inurl:eufy inurl:web inurl:interface
+intitle:"Eufy" inurl:/device/
+inurl:eufy.com inurl:/api/
+intitle:"Eufy" inurl:/app/
+inurl:eufy inurl:settings inurl:camera
+intitle:"Eufy Security" inurl:/web/
+inurl:eufy.com inurl:/viewer
+intitle:"Eufy" inurl:config.html
+inurl:eufy inurl:homebase inurl:web
+intitle:"Eufy Doorbell" inurl:setup
+inurl:eufy inurl:portal
+
+# Stream & Video Access
+inurl:eufy inurl:stream
+intitle:"Eufy" inurl:mjpeg
+inurl:eufy inurl:rtsp
+inurl:eufy inurl:video.cgi
+intitle:"Eufy" inurl:/stream/live
+inurl:eufy "motion-JPEG"
+intitle:"Eufy Doorbell" inurl:playback
+inurl:eufy inurl:recording
+intitle:"Eufy" inurl:snapshot
+inurl:eufy inurl:/live/
+intitle:"Eufy" inurl:preview
+inurl:eufy inurl:video.mp4
+intitle:"Eufy Doorbell" inurl:/clip/
+inurl:eufy inurl:thumbnail
+intitle:"Eufy" inurl:h264
+
+# Authentication & Access Control
+intitle:"Eufy" "login" "password"
+intitle:"Eufy Doorbell" "authentication required"
+inurl:eufy inurl:login.html
+intitle:"Eufy" "unauthorized" "403"
+intitle:"Eufy Doorbell" "credentials"
+inurl:eufy inurl:auth
+intitle:"Eufy" "user login" doorbell
+intext:"Eufy" "HTTP Basic Auth"
+intitle:"Eufy" inurl:account
+inurl:eufy inurl:token
+intitle:"Eufy Doorbell" "session"
+inurl:eufy inurl:/api/token
+intitle:"Eufy" "bearer token"
+inurl:eufy inurl:oauth
+intitle:"Eufy Doorbell" inurl:/auth/
+
+# API Endpoints & Backend
+inurl:eufy.com/api/v1
+inurl:eufy inurl:/api/doorbell
+intitle:"Eufy" inurl:/api/device
+inurl:eufy inurl:/api/stream
+inurl:eufy.com/api/account
+inurl:eufy inurl:/api/events
+intitle:"Eufy" inurl:/api/motion
+inurl:eufy inurl:/api/recording
+inurl:eufy inurl:/api/config
+inurl:eufy.com/api/status
+inurl:eufy inurl:/api/station
+intitle:"Eufy" inurl:/api/users
+inurl:eufy inurl:/api/get
+inurl:eufy inurl:/api/post
+inurl:eufy inurl:/api/push
+
+# Device Information & Metadata
+intitle:"Eufy" doorbell "device ID"
+intext:"Eufy" "serial number"
+intitle:"Eufy Doorbell" "MAC address"
+inurl:eufy inurl:device/info
+intitle:"Eufy" doorbell "firmware"
+inurl:eufy inurl:status
+intitle:"Eufy Doorbell" "version"
+intext:"Eufy" "software version" doorbell
+intitle:"Eufy" doorbell "hardware"
+inurl:eufy inurl:capabilities
+intitle:"Eufy" inurl:/device/properties
+inurl:eufy inurl:system/info
+intitle:"Eufy Doorbell" "uptime"
+intext:"Eufy" "model" "T8111"
+intitle:"Eufy" "battery" "doorbell"
+
+# Motion & Event Logs
+intitle:"Eufy" inurl:motion
+inurl:eufy inurl:events
+intitle:"Eufy Doorbell" "motion detected"
+inurl:eufy inurl:event/log
+intitle:"Eufy" inurl:alerts
+inurl:eufy inurl:detections
+intitle:"Eufy Doorbell" inurl:/history/
+inurl:eufy inurl:activity
+intitle:"Eufy" inurl:notification
+inurl:eufy inurl:event/query
+intitle:"Eufy Doorbell" "event" "timestamp"
+inurl:eufy inurl:recording/list
+intitle:"Eufy" inurl:/playback/
+inurl:eufy inurl:motion/list
+intitle:"Eufy Doorbell" inurl:/events/query
+
+# Advanced Combination Queries
+intitle:"Eufy" inurl:dashboard inurl:camera -inurl:store
+"Eufy" "doorbell" inurl:admin inurl:settings
+intitle:"Eufy Doorbell" inurl:live inurl:view
+inurl:eufy inurl:/api/ inurl:stream -inurl:docs
+intitle:"Eufy" inurl:device inurl:status inurl:live
+"Eufy" "doorbell" "192.168" inurl:web
+intitle:"Eufy" inurl:config inurl:camera inurl:stream
+inurl:eufy inurl:/web/ inurl:portal inurl:login
+intitle:"Eufy Doorbell" inurl:homebase inurl:device
+"Eufy" inurl:/api/v1 inurl:device inurl:stream
+intitle:"Eufy" inurl:settings inurl:network inurl:camera
+inurl:eufy inurl:app inurl:user inurl:account
+intitle:"Eufy Doorbell" inurl:viewer inurl:live inurl:mjpeg
+"Eufy" inurl:/api/ inurl:motion inurl:events -inurl:docs
+intitle:"Eufy" inurl:dashboard inurl:recording inurl:playback
+
+# Model-Specific Queries
+intitle:"Eufy Doorbell 2K"
+intitle:"Eufy Doorbell Pro"
+intitle:"Eufy Doorbell E340"
+intitle:"Eufy Video Doorbell Dual"
+intitle:"Eufy Wireless Doorbell"
+intext:"T8111" intext:"Eufy"
+intext:"T8112" intext:"Eufy"
+intitle:"Eufy" "doorbell" "2K resolution"
+intitle:"Eufy" "doorbell" "1080p"
+
+# Network & Protocol-Specific
+inurl:eufy inurl:192.168
+intitle:"Eufy" inurl:port 8000 OR 8001 OR 8080 OR 443
+inurl:eufy inurl:https
+intitle:"Eufy Doorbell" inurl:https inurl:admin
+inurl:eufy.local
+intitle:"Eufy" inurl:bonjour
+intitle:"Eufy" inurl:mdns
+inurl:eufy inurl:upnp
+intitle:"Eufy Doorbell" inurl:ssdp
+
+# Cloud & Sync Integration
+intitle:"Eufy" inurl:cloud
+inurl:eufy inurl:/sync/
+intitle:"Eufy Doorbell" inurl:backup
+inurl:eufy inurl:account/devices
+intitle:"Eufy" inurl:homebase/status
+inurl:eufy inurl:/sync/devices
+intitle:"Eufy Doorbell" inurl:pair
+inurl:eufy inurl:/device/sync
+
+# Configuration & Settings Exposure
+intitle:"Eufy" inurl:config inurl:json
+intitle:"Eufy Doorbell" inurl:settings.json
+inurl:eufy inurl:.conf
+intitle:"Eufy" inurl:config.xml
+inurl:eufy inurl:setup.ini
+intitle:"Eufy Doorbell" inurl:/etc/
+inurl:eufy inurl:/config/backup
+intitle:"Eufy" inurl:export
+
+# Debugging & Development Endpoints
+intitle:"Eufy" inurl:/debug
+intitle:"Eufy Doorbell" inurl:console
+inurl:eufy inurl:/test/
+intitle:"Eufy" inurl:/dev/
+inurl:eufy inurl:swagger
+intitle:"Eufy Doorbell" inurl:graphql
+inurl:eufy inurl:/logs/
+intitle:"Eufy" inurl:metrics
+
+# User Enumeration & Account Exposure
+intitle:"Eufy" inurl:/users/
+inurl:eufy inurl:/account/
+intitle:"Eufy Doorbell" inurl:profile
+inurl:eufy inurl:/admin/users
+intitle:"Eufy" inurl:/members/
+inurl:eufy inurl:user/list
+
+# Historical & Archive Queries
+intitle:"Eufy" inurl:archive
+intitle:"Eufy Doorbell" inurl:history
+inurl:eufy inurl:/recordings/old
+intitle:"Eufy" inurl:previous
+inurl:eufy inurl:backup/restore
