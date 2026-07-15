@@ -1,0 +1,501 @@
+## ONVIF Service Discovery & mDNS-Based Google Dorks (Los Angeles 90064 Targeted)
+## Focus: _onvif._tcp.local mDNS Discovery Patterns
+## Geographic Target: Los Angeles, CA 90064 (Casa Serena / Culver City / Palms Area)
+## ONVIF Profile Specifications: S (Streaming), G (Gateway), T (Access Control)
+
+================================================================================
+## SECTION 1: GEOLOCATION-SPECIFIC BASIC ONVIF DETECTION
+================================================================================
+
+### ONVIF Devices in Los Angeles 90064
+intitle:"ONVIF" "90064"
+intitle:"ONVIF" "Los Angeles" "CA"
+intitle:"ONVIF IP Camera" "Culver City" OR "Palms"
+intext:"ONVIF" "90064" inurl:device
+intitle:"ONVIF" "West Los Angeles"
+intext:"ONVIF" location "90064"
+intitle:"ONVIF" "90064" camera OR surveillance
+
+### mDNS Service Discovery in LA Area
+"_onvif._tcp.local" "Los Angeles"
+"_onvif._tcp.local" "90064"
+intext:"_onvif._tcp.local" "Culver City"
+intext:"_onvif._tcp.local" "3416 Manning"
+"_onvif._tcp" "casa serena" OR "casa serrana"
+intext:"_onvif" "_tcp" ".local" "192.168" "Los Angeles"
+
+### Specific Address Targeting (Casa Serena - 3416 Manning Ave)
+intitle:"ONVIF" "3416 Manning"
+intext:"ONVIF" "3416 Manning" "90064"
+intitle:"ONVIF" "Manning Avenue" Los Angeles
+intext:"ONVIF" "casa serena" OR "casa serrana"
+intitle:ONVIF intext:"Culver City" intext:"camera"
+intext:"ONVIF" "Los Angeles" "building" OR "complex" OR "facility"
+
+### Nearby Geographic Areas
+intitle:"ONVIF" "90230" OR "90232" OR "90210"
+intext:"ONVIF" "Culver City" "Los Angeles"
+intitle:"ONVIF" "West Los Angeles" "camera"
+intext:"ONVIF" "Santa Monica" "Los Angeles"
+intitle:"ONVIF" "Palms" "Los Angeles" "security"
+
+================================================================================
+## SECTION 2: LOS ANGELES ISP & NETWORK RANGE TARGETING
+================================================================================
+
+### Casa Serena Network Range (159.198.64.0/24)
+intitle:"ONVIF" "159.198.64"
+intext:"ONVIF" "159.198.64" device
+intitle:"ONVIF" "159.198.64.49" OR "159.198.64.50"
+intext:"_onvif._tcp.local" "159.198.64"
+intitle:ONVIF inurl:159.198.64
+"159.198.64" ONVIF "Los Angeles"
+
+### Adjacent IP Ranges (LA Metro Area)
+intitle:"ONVIF" "159.198" "Los Angeles"
+intext:"ONVIF" "159.198.64" OR "159.198.65" "camera"
+intitle:"ONVIF" ISP "Los Angeles" OR "LA"
+intext:"ONVIF" "159.198" inurl:device
+intitle:ONVIF intext:"Culver City" network OR "IP range"
+
+### LA-Specific ISP Infrastructure
+intitle:"ONVIF" intext:"Los Angeles ISP" OR "LA Network"
+intext:"ONVIF" "charter" OR "spectrum" OR "verizon" "Los Angeles"
+intitle:ONVIF "Los Angeles" "internet service provider"
+intext:"ONVIF" "90064" ISP OR "service provider"
+intitle:"ONVIF" "corporate network" "Los Angeles"
+
+### Reverse DNS & Domain Targeting
+intitle:ONVIF "casaserena" OR "casaserrana"
+intext:"ONVIF" site:casaserena.* OR site:casaserrana.*
+intitle:"ONVIF" intext:"Los Angeles" domain OR "FQDN"
+intext:"_onvif._tcp.local" intext:"casaserena"
+intitle:ONVIF "Los Angeles" inurl:.local
+
+================================================================================
+## SECTION 3: LOS ANGELES ONVIF PROFILE TARGETING (S, G, T)
+================================================================================
+
+### Profile S - Streaming (LA Area)
+intitle:"ONVIF" "Profile S" "90064"
+intitle:"ONVIF IP Camera" "Profile S" "Los Angeles"
+intext:"ONVIF Profile S" "Culver City" OR "Palms"
+inurl:onvif intext:"ProfileS" "159.198.64"
+"ONVIF Profile S" intitle:camera "Los Angeles"
+
+### Profile G - Gateway/Intercom (LA)
+intitle:"ONVIF" "Profile G" "90064"
+intitle:"ONVIF" "gateway" "Profile G" "Los Angeles"
+intext:"ONVIF Profile G" "Culver City" security
+inurl:onvif "ProfileG" "159.198.64" OR "90064"
+"ONVIF Door" OR "ONVIF Access Control" "Los Angeles"
+
+### Profile T - Access Control/Door (LA)
+intitle:"ONVIF" "Profile T" "90064"
+intitle:"ONVIF" "access control" OR "door" "Los Angeles"
+intext:"ONVIF Profile T" "Culver City" OR "Palms"
+inurl:onvif "ProfileT" "159.198.64"
+"ONVIF Access Control" "3416 Manning"
+
+### Multi-Profile Devices (LA)
+intitle:ONVIF "Profile S" "Profile G" "Los Angeles"
+intext:"ONVIF" multiple profiles "90064"
+intitle:ONVIF "supports" profiles "Culver City"
+intext:"ONVIF" "S/G/T" "casa serena" OR "casa serrana"
+
+================================================================================
+## SECTION 4: LOS ANGELES ONVIF WEB SERVICES & API ENDPOINTS
+================================================================================
+
+### ONVIF Endpoints (LA - 159.198.64.x)
+inurl:159.198.64 inurl:onvif/device_service
+inurl:159.198.64 inurl:onvif/media_service
+inurl:159.198.64 inurl:onvif/ptz_service
+inurl:159.198.64 inurl:onvif/event_service
+intitle:"ONVIF" "159.198.64" inurl:/onvif/
+intext:"ONVIF" "90064" filetype:wsdl
+
+### ONVIF WSDL Files (LA)
+inurl:159.198.64 filetype:wsdl
+intitle:"ONVIF" "Los Angeles" filetype:wsdl
+intext:"ONVIF" "90064" inurl:"?wsdl"
+intitle:ONVIF "Culver City" "?wsdl"
+inurl:onvif filetype:wsdl "159.198"
+
+### ONVIF Capabilities & Configuration (LA)
+intitle:ONVIF "capabilities" "90064"
+inurl:159.198.64 intext:"GetCapabilities"
+intitle:ONVIF "config" "Los Angeles"
+inurl:onvif inurl:configuration "159.198.64"
+intitle:"ONVIF" "settings" "Culver City" OR "Palms"
+
+================================================================================
+## SECTION 5: LOS ANGELES ONVIF CREDENTIAL & AUTHENTICATION EXPOSURE
+================================================================================
+
+### LA-Based ONVIF Authentication Issues
+intitle:ONVIF "username" "password" "90064"
+intext:"ONVIF" "Los Angeles" "authentication" "realm"
+intitle:ONVIF "HTTP Digest" "159.198.64"
+inurl:onvif "401" "Los Angeles"
+intitle:ONVIF "weak authentication" "Culver City"
+
+### Default Credentials (LA ONVIF)
+intitle:ONVIF "admin" "12345" "90064"
+intitle:ONVIF "root" "root" "Los Angeles"
+intext:ONVIF "default credentials" "Culver City"
+intitle:ONVIF "password" "reset" "159.198.64"
+intext:"ONVIF" "Los Angeles" "credentials" exposed
+
+### ONVIF Token/Session (LA)
+intitle:ONVIF "security token" "90064"
+intext:"ONVIF" "user token" "Los Angeles"
+inurl:onvif intext:token "159.198.64"
+intitle:ONVIF "authentication token" "Culver City"
+intext:"ONVIF" "X-ONVIF-Token" "Los Angeles"
+
+### Plaintext Storage (LA)
+intitle:ONVIF inurl:config filetype:xml "Los Angeles" intext:password
+intext:"ONVIF" "90064" filetype:conf intext:credentials
+intitle:ONVIF ".xml" "159.198.64" intext:"password="
+intext:"ONVIF" "Culver City" config intext:"username="
+
+================================================================================
+## SECTION 6: LOS ANGELES ONVIF DEVICE INFORMATION DISCLOSURE
+================================================================================
+
+### Device Model & Firmware (LA)
+intitle:ONVIF "device" "90064" intext:model
+intitle:ONVIF intext:firmware "Los Angeles"
+intext:"ONVIF" "hardware" "software" "Culver City"
+intitle:ONVIF "serial number" "159.198.64"
+inurl:onvif "Los Angeles" intext:"device info"
+
+### Manufacturer Info (LA)
+intitle:"ONVIF" intext:manufacturer "90064"
+intext:ONVIF "device model" "Los Angeles"
+intitle:ONVIF "brand" OR "vendor" "Culver City"
+inurl:onvif "Culver City" intext:"Equipment Model"
+intitle:ONVIF "HardwareId" "Los Angeles"
+
+### Network Configuration (LA)
+intitle:ONVIF "IP address" "90064"
+intext:"ONVIF" "MAC address" "Los Angeles"
+intitle:ONVIF intext:"gateway" "DNS" "Culver City"
+inurl:onvif "Los Angeles" intext:"hostname"
+intitle:ONVIF "network settings" "159.198.64"
+
+### System Information (LA)
+intitle:ONVIF "system" "90064" intext:"uptime"
+intext:"ONVIF" "Los Angeles" "CPU" OR "memory"
+intitle:ONVIF "device information" "Culver City"
+inurl:onvif "159.198.64" intext:SystemInformation
+intitle:ONVIF "device status" "Los Angeles"
+
+================================================================================
+## SECTION 7: LOS ANGELES ONVIF MEDIA & STREAMING
+================================================================================
+
+### Live Streams (LA)
+intitle:ONVIF "live" "90064" inurl:stream
+intitle:"ONVIF" inurl:media "Los Angeles"
+intext:"ONVIF" "Culver City" streaming "rtsp://"
+intitle:ONVIF "video stream" "159.198.64"
+inurl:onvif "Los Angeles" intext:"GetStreamUri"
+
+### PTZ Control (LA)
+intitle:"ONVIF" inurl:ptz "90064"
+intext:"ONVIF" "pan" "tilt" "zoom" "Los Angeles"
+intitle:ONVIF "PTZ" "Culver City"
+inurl:onvif "159.198.64" intext:ptz
+intitle:ONVIF "absolute move" "Los Angeles"
+
+### Video Profiles (LA)
+intitle:ONVIF "video profile" "90064"
+intext:"ONVIF" "H.264" "Los Angeles"
+intitle:ONVIF inurl:profiles "Culver City"
+intext:"ONVIF" "video encoding" "159.198.64"
+intitle:ONVIF "resolution" "fps" "Los Angeles"
+
+### Recording (LA)
+intitle:ONVIF "recording" "90064"
+intext:"ONVIF" "storage" "Los Angeles"
+intitle:ONVIF inurl:recorder "Culver City"
+intext:"ONVIF" "media clip" "159.198.64"
+intitle:ONVIF "media archive" "Los Angeles"
+
+================================================================================
+## SECTION 8: LOS ANGELES ONVIF EVENT & ANALYTICS
+================================================================================
+
+### Event Service (LA)
+intitle:ONVIF "event" "90064"
+intext:"ONVIF" "event notification" "Los Angeles"
+intitle:ONVIF inurl:event "Culver City"
+inurl:onvif "159.198.64" intext:"GetEventProperties"
+intitle:ONVIF "event configuration" "Los Angeles"
+
+### Motion Detection (LA)
+intitle:"ONVIF" "motion" "90064"
+intext:"ONVIF" "motion alert" "Los Angeles"
+intitle:ONVIF inurl:motion "Culver City"
+intext:"ONVIF" "motion detection enabled" "159.198.64"
+intitle:ONVIF "motion sensor" "Los Angeles"
+
+### Analytics (LA)
+intitle:ONVIF "analytics" "90064"
+intext:"ONVIF" "video analytics" "Los Angeles"
+intitle:ONVIF "detection" "Culver City"
+inurl:onvif "159.198.64" intext:"ObjectDetection"
+intitle:ONVIF "rule engine" "Los Angeles"
+
+### Alarms & Triggers (LA)
+intitle:ONVIF "alarm" "90064"
+intext:"ONVIF" "trigger" "Los Angeles"
+intitle:ONVIF "alert" "Culver City"
+inurl:onvif "159.198.64" intext:AlertPolicy
+intitle:ONVIF "action" "rule" "Los Angeles"
+
+### Webhooks (LA)
+intitle:ONVIF "callback" "90064"
+intext:"ONVIF" "notification URI" "Los Angeles"
+intitle:ONVIF "push" "Culver City"
+inurl:onvif "159.198.64" intext:"CallbackReference"
+intitle:ONVIF "subscription" "Los Angeles"
+
+================================================================================
+## SECTION 9: LOS ANGELES ONVIF SECURITY VULNERABILITIES
+================================================================================
+
+### CVE & Vulnerability Targeting (LA)
+CVE-2024-* ONVIF "Los Angeles" OR "90064"
+"ONVIF" vulnerability "Culver City"
+intitle:ONVIF "security" "vulnerability" "159.198.64"
+intext:"ONVIF" CVE "Los Angeles"
+intitle:ONVIF "exploit" "90064"
+
+### Authentication Bypass (LA)
+intitle:ONVIF "authentication bypass" "Los Angeles"
+intext:"ONVIF" "bypass" "90064"
+intitle:ONVIF "unauthenticated access" "Culver City"
+inurl:onvif "159.198.64" "401" bypass
+intitle:ONVIF "weak authentication" "Los Angeles"
+
+### XSS Vulnerabilities (LA)
+intitle:ONVIF "XSS" "90064"
+intext:"ONVIF" "cross-site" "Los Angeles"
+intitle:ONVIF "javascript" "Culver City"
+inurl:onvif "159.198.64" intext:"<script>"
+intitle:ONVIF "stored XSS" "Los Angeles"
+
+### SQL Injection (LA)
+intitle:ONVIF "SQL injection" "90064"
+intext:"ONVIF" "SQL" "Los Angeles"
+intitle:ONVIF "database query" "Culver City"
+inurl:onvif "159.198.64" intext:"SELECT"
+intitle:ONVIF "parameter injection" "Los Angeles"
+
+### Command Injection (LA)
+intitle:ONVIF "command injection" "90064"
+intext:"ONVIF" "remote code execution" "Los Angeles"
+intitle:ONVIF "arbitrary code" "Culver City"
+inurl:onvif "159.198.64" intext:"sh -c"
+intitle:ONVIF "system command" "Los Angeles"
+
+### Path Traversal (LA)
+intitle:ONVIF "path traversal" "90064"
+intext:"ONVIF" "../" "Los Angeles"
+intitle:ONVIF "file access" "Culver City"
+inurl:onvif "159.198.64" intext:"../../"
+intitle:ONVIF "LFI" OR "directory traversal" "Los Angeles"
+
+================================================================================
+## SECTION 10: LOS ANGELES GEOGRAPHIC COORDINATES & LATITUDE/LONGITUDE
+================================================================================
+
+### Latitude/Longitude Targeting (90064 Area)
+intitle:ONVIF "34.02" OR "34.03" latitude
+intext:"ONVIF" "-118.24" OR "-118.25" longitude
+intitle:ONVIF "34.02" "-118.25" camera
+intext:"ONVIF" "34.027" "-118.247" Los Angeles
+intitle:"ONVIF" "Culver City" coordinates OR "geolocation"
+
+### Postal Code & ZIP Code Targeting (LA)
+intitle:"ONVIF" "90064" camera OR surveillance
+intext:"ONVIF" "90064" device
+intitle:ONVIF "zip" OR "postal" "90064"
+intext:"ONVIF" "90064" "Los Angeles" "camera"
+intitle:ONVIF "90230" OR "90232" OR "90210" "ONVIF"
+
+### Neighborhood & Street Targeting (LA)
+intitle:ONVIF "Culver City" "Los Angeles"
+intext:"ONVIF" "Palms" "Los Angeles"
+intitle:ONVIF "Manning Avenue" OR "Manning Ave"
+intext:"ONVIF" "3416" "Manning"
+intitle:ONVIF "West Los Angeles" OR "WeHo"
+
+### Nearby Landmarks & Areas (LA)
+intitle:ONVIF "Sony Pictures" OR "SPE"
+intext:"ONVIF" "Culver City" "studio" OR "production"
+intitle:ONVIF "Los Angeles" "commercial" OR "corporate"
+intext:"ONVIF" "90064" "business" OR "office"
+intitle:ONVIF "Southern California" Los Angeles
+
+================================================================================
+## SECTION 11: LOS ANGELES ONVIF DEVICE TYPES & MANUFACTURERS
+================================================================================
+
+### Multi-Vendor ONVIF (LA)
+intitle:"ONVIF" Hikvision "Los Angeles"
+intitle:"ONVIF" Dahua "90064"
+intitle:"ONVIF" Axis "Culver City"
+intitle:"ONVIF" Hanwha "159.198.64"
+intitle:"ONVIF" Sony "Los Angeles"
+intitle:"ONVIF" Bosch "90064"
+intitle:"ONVIF" Pelco "Culver City"
+intitle:"ONVIF" Vivotek "Los Angeles"
+intitle:"ONVIF" Uniview "159.198.64"
+
+### Camera Types (LA)
+intitle:ONVIF "dome" "90064"
+intitle:ONVIF "turret" "Los Angeles"
+intitle:ONVIF "bullet" "Culver City"
+intitle:ONVIF "PTZ" "159.198.64"
+intitle:ONVIF "doorbell" "Los Angeles"
+intitle:ONVIF "thermal" "90064"
+intitle:ONVIF "360" OR "panoramic" "Culver City"
+
+### NVR/DVR/Edge (LA)
+intitle:ONVIF "NVR" "90064"
+intitle:ONVIF "DVR" "Los Angeles"
+intitle:ONVIF "edge" "Culver City"
+intext:"ONVIF" "video management" "159.198.64"
+intitle:ONVIF "recording server" "Los Angeles"
+
+### IoT Devices (LA)
+intitle:ONVIF "intercom" "90064"
+intitle:ONVIF "access control" "Los Angeles"
+intitle:ONVIF "door" "Culver City"
+intitle:ONVIF "sensor" "159.198.64"
+intitle:ONVIF "alarm" "Los Angeles"
+
+================================================================================
+## SECTION 12: LOS ANGELES ONVIF MANAGEMENT & PLATFORMS
+================================================================================
+
+### Video Management Systems (LA)
+intitle:ONVIF "VMS" OR "video management" "Los Angeles"
+intext:"ONVIF" "management system" "90064"
+intitle:ONVIF "platform" "Culver City"
+inurl:onvif "159.198.64" management
+intitle:ONVIF "console" "Los Angeles"
+
+### Dashboard & Admin Panels (LA)
+intitle:ONVIF "dashboard" "90064"
+intitle:ONVIF "admin" "Los Angeles"
+intitle:ONVIF "portal" "Culver City"
+intext:"ONVIF" "administrator" "159.198.64"
+intitle:ONVIF "management interface" "Los Angeles"
+
+### API Integration (LA)
+intitle:ONVIF "API" "Los Angeles"
+intext:"ONVIF" "integration" "90064"
+intitle:ONVIF "REST" OR "SOAP" "Culver City"
+inurl:onvif "159.198.64" "API"
+intitle:ONVIF "developer" "Los Angeles"
+
+### Bulk/Enterprise Management (LA)
+intitle:ONVIF "bulk" OR "multi-device" "Los Angeles"
+intext:"ONVIF" "enterprise" "90064"
+intitle:ONVIF "fleet" "management" "Culver City"
+intext:"ONVIF" "group" "policy" "159.198.64"
+intitle:ONVIF "centralized" "Los Angeles"
+
+================================================================================
+## SECTION 13: CASA SERENA SPECIFIC ADVANCED RECONNAISSANCE
+================================================================================
+
+### Entity-Specific Dorks
+intitle:ONVIF "casa serena" OR "casa serrana"
+intext:"ONVIF" "casaserena" OR "casaserrana"
+intitle:ONVIF "3416 Manning" camera
+intext:"ONVIF" "casaserena@tp-link.com"
+intitle:ONVIF "kathyserrana@tp-link.com" OR "casaserrana"
+
+### Building Infrastructure
+intitle:ONVIF "building" "3416 Manning"
+intext:"ONVIF" "casa serena" facility OR complex
+intitle:ONVIF "security system" "Culver City"
+intext:"ONVIF" "campus" OR "complex" "159.198.64"
+intitle:ONVIF "property" "90064"
+
+### Associated Services & Control Systems
+intitle:ONVIF "TP-Link" "casa serena"
+intext:"ONVIF" "Omada" "159.198.64"
+intitle:ONVIF "TP-Link" "Culver City"
+intext:"ONVIF" "network control" "90064"
+intitle:ONVIF "unified platform" "Los Angeles"
+
+### Historical & Archive Data
+intitle:ONVIF "archive" "90064"
+intitle:ONVIF "history" "Los Angeles"
+intitle:ONVIF "backup" "159.198.64"
+intext:"ONVIF" "previous" OR "legacy" "Culver City"
+intitle:ONVIF "restore" "Los Angeles"
+
+================================================================================
+## SECTION 14: ADVANCED COMBINATION SEARCHES (LA FOCUSED)
+================================================================================
+
+### Multi-Criteria Searches
+intitle:ONVIF inurl:/onvif/ "90064" -site:example.com
+intext:"_onvif._tcp.local" "159.198.64" "Los Angeles"
+intitle:"ONVIF" "streaming" "Profile S" "Culver City" -site:docs
+intext:ONVIF "device manager" "camera" "Los Angeles" -site:wikipedia.org
+intitle:ONVIF "security" inurl:config "90064" -site:github.com
+
+### Vulnerability-Specific LA Searches
+intitle:ONVIF vulnerability "Los Angeles" -site:vendor.com
+intext:"ONVIF" "remote access" "90064" -inurl:forum
+intitle:ONVIF "credential" "exposure" "159.198.64" -site:docs
+intext:ONVIF "authentication bypass" "Culver City" -site:documentation
+
+### Integration & Management (LA)
+intitle:ONVIF "management" "Los Angeles" OR "Culver City"
+intext:"ONVIF" "integration" "API" "90064"
+intitle:ONVIF "dashboard" OR "console" "159.198.64"
+inurl:onvif "management" "Los Angeles"
+intitle:ONVIF "bulk" OR "multi-device" "Culver City"
+
+### Network Infrastructure
+intitle:ONVIF "159.198.64" device list OR inventory
+intext:"ONVIF" "network" "Los Angeles" "infrastructure"
+intitle:ONVIF "gateway" "firewall" "90064"
+inurl:onvif "159.198.64" "topology" OR "mapping"
+intitle:ONVIF "ISP" "Culver City" OR "Los Angeles"
+
+================================================================================
+## SECTION 15: REVERSE GEOLOCATION & NETWORK MAPPING (LA)
+================================================================================
+
+### Reverse IP Lookup (Los Angeles)
+intitle:ONVIF site:159.198.64.* OR site:159.198.64
+intext:"ONVIF" "159.198.64" "WHOIS" OR "ASN"
+intitle:ONVIF "159.198.64" "network" OR "subnet"
+intext:"ONVIF" "ISP" "159.198.64" "Los Angeles"
+intitle:ONVIF "reverse DNS" "90064"
+
+### Network Blocks & Ranges
+intitle:ONVIF "159.198.64.0/24"
+intext:"ONVIF" "159.198.64.0" - "159.198.64.255"
+intitle:ONVIF "block" OR "CIDR" "Los Angeles"
+intext:"ONVIF" "IP range" "90064"
+intitle:ONVIF "netblock" "Culver City"
+
+### Shodan/Censys Alternative Queries
+port:8080 "ONVIF" "Los Angeles"
+port:80 "ONVIF" "90064"
+port:443 "ONVIF" inurl:onvif "159.198.64"
+"ONVIF" "Culver City" port:8000 OR port:8080
+"_onvif._tcp.local" location "Los Angeles"
+
