@@ -1,0 +1,175 @@
+# 88 Google Dorks - Airwallex Payment Processor Data Disclosure
+# Target: Airwallex API credentials, merchant data, transaction records, and international payments
+# Focus: OAuth tokens, API keys, customer information, and cross-border payment data
+
+## AIRWALLEX - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:airwallex
+2. inurl:pastebin intitle:airwallex api
+3. inurl:pastebin intitle:airwallex credentials
+4. inurl:pastebin "airwallex.com" api
+5. site:pastebin.com airwallex
+6. inurl:hastebin intitle:airwallex
+7. inurl:paste.org intitle:airwallex
+8. site:pastebin.com airwallex token
+9. inurl:pastebin intitle:airwallex merchant
+10. inurl:pastebin airwallex webhook
+
+## AIRWALLEX - API CREDENTIALS & KEYS
+
+11. inurl:pastebin airwallex "api_key"
+12. inurl:pastebin airwallex "access_token"
+13. inurl:pastebin airwallex "client_id"
+14. inurl:pastebin airwallex "client_secret"
+15. inurl:pastebin airwallex "oauth"
+16. inurl:pastebin airwallex "x-api-key"
+17. site:pastebin.com airwallex secret
+18. inurl:pastebin airwallex bearer
+19. inurl:pastebin airwallex authentication
+20. inurl:pastebin airwallex platform
+
+## AIRWALLEX - MERCHANT & ACCOUNT DATA
+
+21. inurl:pastebin intitle:airwallex merchant
+22. inurl:pastebin intitle:airwallex account
+23. inurl:pastebin airwallex "merchant_id"
+24. inurl:pastebin airwallex "account_id"
+25. site:pastebin.com airwallex merchant dump
+26. inurl:pastebin airwallex business
+27. inurl:pastebin airwallex seller
+28. inurl:pastebin airwallex entity
+29. inurl:pastebin airwallex company
+30. inurl:pastebin airwallex registration
+
+## AIRWALLEX - CUSTOMER & PAYMENT DATA
+
+31. inurl:pastebin intitle:airwallex customer
+32. inurl:pastebin intitle:airwallex payment
+33. inurl:pastebin airwallex "customer_id"
+34. site:pastebin.com airwallex customer database
+35. inurl:pastebin airwallex transaction
+36. inurl:pastebin airwallex order
+37. inurl:pastebin airwallex invoice
+38. inurl:pastebin airwallex recipient
+39. inurl:pastebin airwallex beneficiary
+40. inurl:pastebin airwallex payer
+
+## AIRWALLEX - INTERNATIONAL & FX DATA
+
+41. inurl:pastebin intitle:airwallex transfer
+42. inurl:pastebin intitle:airwallex payout
+43. inurl:pastebin airwallex "transfer_id"
+44. inurl:pastebin airwallex forex
+45. inurl:pastebin airwallex "fx_rate"
+46. site:pastebin.com airwallex cross-border
+47. inurl:pastebin airwallex settlement
+48. inurl:pastebin airwallex beneficiary
+49. inurl:pastebin airwallex routing
+50. inurl:pastebin airwallex swift
+
+## AIRWALLEX - EXPOSED FILES
+
+51. filetype:csv airwallex customer
+52. filetype:xlsx airwallex merchant
+53. filetype:json airwallex api
+54. filetype:sql airwallex customer
+55. filetype:env "AIRWALLEX_"
+56. filetype:env "AIRWALLEX_API_KEY"
+57. filetype:txt airwallex credentials
+58. filetype:config airwallex
+59. filetype:bak airwallex
+60. filetype:backup airwallex
+
+## AIRWALLEX - LOGS & TRANSACTION RECORDS
+
+61. filetype:log airwallex transaction
+62. filetype:log airwallex payment
+63. filetype:log airwallex transfer
+64. filetype:log airwallex error
+65. filetype:log airwallex customer
+66. filetype:txt airwallex transaction
+67. filetype:log airwallex settlement
+68. filetype:log airwallex payout
+69. filetype:log airwallex api
+70. filetype:log airwallex webhook
+
+## AIRWALLEX - SOURCE CODE & INTEGRATION
+
+71. site:github.com filetype:py airwallex
+72. site:github.com filetype:js airwallex secret
+73. site:github.com filetype:env "AIRWALLEX_"
+74. site:github.com filetype:config airwallex
+75. site:github.com filetype:java airwallex
+76. site:github.com filetype:php airwallex
+77. site:github.com filetype:rb airwallex
+78. site:gitlab.com airwallex api
+79. site:bitbucket.org filetype:env airwallex
+80. inurl:/.git/ airwallex
+
+## AIRWALLEX - INTERNAL SYSTEMS & WEBHOOKS
+
+81. inurl:admin intitle:airwallex
+82. inurl:dashboard airwallex filetype:html
+83. inurl:airwallex/admin filetype:php
+84. inurl:webhook airwallex
+85. inurl:api.airwallex intitle:admin
+86. filetype:conf airwallex admin
+87. filetype:yaml airwallex webhook
+88. inurl:airwallex/callback
+
+---
+
+## AIRWALLEX SPECIFIC IDENTIFIERS
+
+**Key Airwallex identifiers to search for:**
+- **API Key:** Airwallex format
+- **Access Token:** access_token
+- **Merchant ID:** merchant_id
+- **Account ID:** account_id
+- **Transfer ID:** transfer_id
+- **Customer ID:** customer_id
+- **Domain:** airwallex.com, api.airwallex.com
+
+## USAGE NOTES
+
+These dorks target:
+- **Airwallex API keys and authentication credentials**
+- **Merchant and account information**
+- **Customer database and recipient information**
+- **International transfer and FX data**
+- **Cross-border payment records**
+- **Payout and settlement information**
+- **Configuration files with Airwallex integration**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing of Airwallex integrations
+- Vulnerability disclosure to Airwallex
+- Academic security research
+- Authorized compliance activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to Airwallex systems
+- Wire fraud using payment processing
+- Theft of payment credentials
+- Identity theft
+- Money laundering
+- Computer fraud and abuse
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Computer Fraud (CFAA): Up to 10 years + $250,000+
+- Identity Theft: 15 years additional sentencing
+- Money Laundering: 10 years imprisonment + penalties
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings to Airwallex Security: security@airwallex.com
+3. Use responsible disclosure practices
+4. Never exploit or monetize vulnerabilities
+5. Comply with international payment regulations
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
