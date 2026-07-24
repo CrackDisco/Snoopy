@@ -1,0 +1,161 @@
+# 88 Google Dorks - Financial & Payment Card Data Disclosure
+# Similar to: inurl:pastebin intitle:mastercard
+# Focus: Credit cards, payment info, financial data leaks
+
+## PASTEBIN & PASTE SITES - PAYMENT CARDS
+
+1. inurl:pastebin intitle:mastercard
+2. inurl:pastebin intitle:visa
+3. inurl:pastebin intitle:amex
+4. inurl:pastebin intitle:cc number
+5. inurl:pastebin intitle:credit card
+6. inurl:pastebin "4532" OR "5105" OR "3782"
+7. inurl:paste.org intitle:creditcard
+8. inurl:hastebin intitle:visa
+9. inurl:github.com intitle:mastercard
+10. site:pastebin.com intitle:amex
+
+## PASTEBIN - CARDHOLDER DATA
+
+11. inurl:pastebin intitle:cardholder
+12. inurl:pastebin intitle:cvv
+13. inurl:pastebin intitle:cvc
+14. inurl:pastebin intitle:expiration date
+15. inurl:pastebin "card number" intitle:leaked
+16. site:pastebin.com "card holder"
+17. inurl:pastebin intitle:"payment method"
+18. inurl:pastebin intitle:"card details"
+19. inurl:pastebin intitle:"debit card"
+20. inurl:pastebin intitle:"payment card"
+
+## PASTEBIN - DATABASE DUMPS
+
+21. inurl:pastebin intitle:database dump
+22. inurl:pastebin intitle:cardholder database
+23. inurl:pastebin "credit_card" intitle:dump
+24. site:pastebin.com intitle:financial dump
+25. inurl:paste.org intitle:card database
+26. inurl:pastebin intitle:"customer records"
+27. inurl:pastebin intitle:"merchant" filetype:csv
+28. inurl:pastebin intitle:transaction
+29. inurl:pastebin intitle:"payment processor"
+30. inurl:pastebin intitle:"acquiring bank"
+
+## PASTEBIN - FINANCIAL INSTITUTIONS
+
+31. inurl:pastebin intitle:bank filetype:txt
+32. inurl:pastebin intitle:credit union
+33. inurl:pastebin intitle:fintech
+34. inurl:pastebin intitle:paypal
+35. inurl:pastebin intitle:stripe
+36. inurl:pastebin intitle:square
+37. inurl:pastebin intitle:cashapp
+38. inurl:pastebin intitle:venmo
+39. inurl:pastebin intitle:cryptocurrency
+40. inurl:pastebin intitle:blockchain wallet
+
+## EXPOSED FILES - PAYMENT DATA
+
+41. filetype:csv "card number" OR "mastercard" OR "visa"
+42. filetype:xlsx "credit card" OR "debit card"
+43. filetype:xls cardholder name
+44. filetype:txt "^4[0-9]{12}(?:[0-9]{3})?$"
+45. filetype:json "payment_card" OR "credit_card"
+46. filetype:xml cardholder data
+47. filetype:sql "card_number" OR "cardnumber"
+48. filetype:sql "cvv" OR "cvc"
+49. filetype:bak payment information
+50. filetype:backup card holder
+
+## EXPOSED LOGS - TRANSACTION DATA
+
+51. filetype:log payment failed
+52. filetype:log transaction error
+53. filetype:log cvv
+54. filetype:log "card declined"
+55. filetype:log "authorization failed"
+56. filetype:log merchant processor
+57. filetype:log payment gateway
+58. filetype:txt transaction log
+59. filetype:log cardholder
+60. filetype:log "PAN" OR "primary account number"
+
+## SOURCE CODE - PAYMENT PROCESSING
+
+61. site:github.com filetype:py payment card
+62. site:github.com filetype:js "stripe" "sk_live"
+63. site:github.com filetype:env "card_number"
+64. site:github.com filetype:config payment
+65. site:github.com filetype:java payment processing
+66. site:github.com filetype:php "credit_card"
+67. site:gitlab.com filetype:yml payment
+68. site:bitbucket.org filetype:env stripe
+69. inurl:/.git/ payment
+70. site:github.com filetype:sql cardholder
+
+## EXPOSED CONFIG FILES
+
+71. filetype:conf payment gateway
+72. filetype:ini merchant account
+73. filetype:config "card_number" OR "mastercard"
+74. filetype:properties payment processor
+75. web.config payment OR card
+76. filetype:xml payment method
+77. filetype:yaml stripe api
+78. filetype:env "PAYMENT_" OR "STRIPE_"
+79. filetype:json merchant
+80. filetype:txt api_key payment
+
+## VULNERABLE ENDPOINTS & DATABASES
+
+81. inurl:admin intitle:payment
+82. inurl:payment filetype:html
+83. inurl:transaction intitle:cardholder
+84. inurl:gateway filetype:php
+85. inurl:checkout filetype:log
+86. inurl:billing filetype:sql
+87. inurl:merchant filetype:txt
+88. inurl:/backup/ filetype:csv payment
+
+---
+
+## USAGE NOTES
+
+These dorks target:
+- **Payment card data (PAN, CVV, expiration dates)**
+- **Cardholder personal information**
+- **Financial transaction records**
+- **Payment processor credentials**
+- **Banking and fintech data leaks**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing and security research
+- Vulnerability disclosure and responsible reporting
+- Academic security research
+- Authorized compliance and audit activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to payment card data
+- Identity theft or fraud
+- Violation of PCI-DSS compliance
+- Theft of financial information
+- Violating FCPA, GLBA, or similar regulations
+
+**Penalties for unauthorized use can include:**
+- Federal criminal charges (up to 10 years imprisonment)
+- Civil liability and damages
+- Fines up to $250,000+
+- Loss of professional certifications
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings through responsible disclosure
+3. Comply with all local, state, and federal laws
+4. Follow PCI-DSS and payment card industry regulations
+5. Never exploit or monetize discovered vulnerabilities
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
