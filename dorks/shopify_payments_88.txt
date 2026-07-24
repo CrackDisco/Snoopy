@@ -1,0 +1,172 @@
+# 88 Google Dorks - Shopify Payments Data Disclosure
+# Target: Shopify store data, payment records, customer information, and API credentials
+# Focus: Shopify API tokens, payment gateway data, customer databases, and internal systems
+
+## SHOPIFY - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:shopify
+2. inurl:pastebin intitle:shopify api
+3. inurl:pastebin intitle:shopify store
+4. inurl:pastebin "shopify.com" api
+5. site:pastebin.com shopify
+6. inurl:hastebin intitle:shopify
+7. inurl:paste.org intitle:shopify
+8. site:pastebin.com shopify token
+9. inurl:pastebin intitle:shopify merchant
+10. inurl:pastebin shopify webhook
+
+## SHOPIFY - API CREDENTIALS & TOKENS
+
+11. inurl:pastebin shopify "access_token"
+12. inurl:pastebin shopify "api_key"
+13. inurl:pastebin shopify "api_password"
+14. inurl:pastebin shopify "oauth"
+15. inurl:pastebin shopify "x-shopify-access-token"
+16. site:pastebin.com shopify secret
+17. inurl:pastebin shopify bearer
+18. inurl:pastebin shopify authentication
+19. inurl:pastebin shopify "private_app"
+20. inurl:pastebin shopify custom app
+
+## SHOPIFY - STORE & ACCOUNT DATA
+
+21. inurl:pastebin intitle:shopify store
+22. inurl:pastebin intitle:shopify account
+23. inurl:pastebin shopify "shop_id"
+24. inurl:pastebin shopify myshopify
+25. site:pastebin.com shopify store dump
+26. inurl:pastebin shopify owner
+27. inurl:pastebin shopify admin
+28. inurl:pastebin shopify merchant
+29. inurl:pastebin shopify domain
+30. inurl:pastebin shopify business
+
+## SHOPIFY - CUSTOMER & ORDER DATA
+
+31. inurl:pastebin intitle:shopify customer
+32. inurl:pastebin intitle:shopify order
+33. inurl:pastebin shopify "customer_id"
+34. site:pastebin.com shopify customer database
+35. inurl:pastebin shopify order dump
+36. inurl:pastebin shopify buyer
+37. inurl:pastebin shopify shipping
+38. inurl:pastebin shopify billing
+39. inurl:pastebin shopify email
+40. inurl:pastebin shopify address
+
+## SHOPIFY - PAYMENT & TRANSACTION DATA
+
+41. inurl:pastebin intitle:shopify payment
+42. inurl:pastebin intitle:shopify transaction
+43. inurl:pastebin shopify charge
+44. inurl:pastebin shopify refund
+45. site:pastebin.com shopify payment
+46. inurl:pastebin shopify order payment
+47. inurl:pastebin shopify invoice
+48. inurl:pastebin shopify payout
+49. inurl:pastebin shopify settlement
+50. inurl:pastebin shopify revenue
+
+## SHOPIFY - EXPOSED FILES
+
+51. filetype:csv shopify customer
+52. filetype:xlsx shopify order
+53. filetype:json shopify api
+54. filetype:sql shopify customer
+55. filetype:env "SHOPIFY_"
+56. filetype:env "SHOPIFY_ACCESS_TOKEN"
+57. filetype:txt shopify credentials
+58. filetype:config shopify
+59. filetype:bak shopify
+60. filetype:backup shopify
+
+## SHOPIFY - LOGS & PRODUCT DATA
+
+61. filetype:log shopify order
+62. filetype:log shopify payment
+63. filetype:log shopify customer
+64. filetype:log shopify api
+65. filetype:log shopify error
+66. filetype:txt shopify transaction
+67. filetype:log shopify inventory
+68. filetype:log shopify product
+69. filetype:log shopify variant
+70. filetype:log shopify collection
+
+## SHOPIFY - SOURCE CODE & INTEGRATION
+
+71. site:github.com filetype:py shopify
+72. site:github.com filetype:js shopify secret
+73. site:github.com filetype:env "SHOPIFY_"
+74. site:github.com filetype:config shopify
+75. site:github.com filetype:java shopify
+76. site:github.com filetype:php shopify
+77. site:github.com filetype:rb shopify
+78. site:gitlab.com shopify api
+79. site:bitbucket.org filetype:env shopify
+80. inurl:/.git/ shopify
+
+## SHOPIFY - INTERNAL SYSTEMS & WEBHOOKS
+
+81. inurl:admin intitle:shopify
+82. inurl:dashboard shopify filetype:html
+83. inurl:shopify/admin filetype:php
+84. inurl:webhook shopify
+85. inurl:api.shopify intitle:admin
+86. filetype:conf shopify admin
+87. filetype:yaml shopify webhook
+88. inurl:shopify/callback
+
+---
+
+## SHOPIFY SPECIFIC IDENTIFIERS
+
+**Key Shopify identifiers to search for:**
+- **Access Token:** x-shopify-access-token
+- **Store URL:** .myshopify.com
+- **Shop ID:** shop_
+- **Order ID:** order_
+- **Customer ID:** customer_
+- **Product ID:** product_
+- **Domain:** shopify.com, api.shopify.com
+
+## USAGE NOTES
+
+These dorks target:
+- **Shopify API tokens and access credentials**
+- **Store account and owner information**
+- **Customer account database**
+- **Order and transaction records**
+- **Payment gateway integration data**
+- **Webhook and callback information**
+- **Configuration files with Shopify integration**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing of Shopify stores
+- Vulnerability disclosure to Shopify
+- Academic security research
+- Authorized compliance activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to Shopify stores
+- Wire fraud using payment processing
+- Theft of payment credentials
+- Identity theft via customer data
+- Computer fraud and abuse
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Computer Fraud (CFAA): Up to 10 years + $250,000+
+- Identity Theft: 15 years additional sentencing
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings to Shopify Security: security@shopify.com
+3. Use responsible disclosure practices
+4. Never exploit or monetize vulnerabilities
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
