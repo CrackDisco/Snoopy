@@ -1,0 +1,172 @@
+# 88 Google Dorks - PayPal Payment Processor Data Disclosure
+# Target: PayPal API credentials, customer accounts, transaction records, and internal data
+# Focus: API signatures, OAuth tokens, customer information, and payment data
+
+## PAYPAL - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:paypal
+2. inurl:pastebin intitle:paypal api
+3. inurl:pastebin intitle:paypal credentials
+4. inurl:pastebin "paypal.com" api
+5. site:pastebin.com paypal
+6. inurl:hastebin intitle:paypal
+7. inurl:paste.org intitle:paypal
+8. site:pastebin.com paypal account
+9. inurl:pastebin intitle:paypal business
+10. inurl:pastebin paypal webhook
+
+## PAYPAL - API CREDENTIALS & KEYS
+
+11. inurl:pastebin paypal "signature"
+12. inurl:pastebin paypal "api_signature"
+13. inurl:pastebin paypal "api_password"
+14. inurl:pastebin paypal "client_id"
+15. inurl:pastebin paypal "client_secret"
+16. inurl:pastebin paypal "access_token"
+17. site:pastebin.com paypal oauth
+18. inurl:pastebin paypal bearer
+19. inurl:pastebin paypal api username
+20. inurl:pastebin paypal merchant account
+
+## PAYPAL - CUSTOMER ACCOUNTS & DATA
+
+21. inurl:pastebin intitle:paypal customer
+22. inurl:pastebin intitle:paypal account
+23. inurl:pastebin intitle:paypal user
+24. inurl:pastebin paypal "customer_id"
+25. site:pastebin.com paypal account dump
+26. inurl:pastebin paypal seller
+27. inurl:pastebin paypal buyer
+28. inurl:pastebin paypal subscription
+29. inurl:pastebin paypal invoice
+30. inurl:pastebin paypal billing
+
+## PAYPAL - TRANSACTION & PAYMENT DATA
+
+31. inurl:pastebin intitle:paypal transaction
+32. inurl:pastebin intitle:paypal payment
+33. inurl:pastebin paypal "txn_id"
+34. inurl:pastebin paypal refund
+35. site:pastebin.com paypal transaction
+36. inurl:pastebin paypal payout
+37. inurl:pastebin paypal balance
+38. inurl:pastebin paypal dispute
+39. inurl:pastebin paypal chargeback
+40. inurl:pastebin paypal settlement
+
+## PAYPAL - EXPOSED FILES
+
+41. filetype:csv paypal customer
+42. filetype:xlsx paypal account
+43. filetype:json paypal api
+44. filetype:sql paypal customer
+45. filetype:env "PAYPAL_"
+46. filetype:env "PAYPAL_SECRET"
+47. filetype:txt paypal credentials
+48. filetype:config paypal
+49. filetype:bak paypal
+50. filetype:backup paypal
+
+## PAYPAL - LOGS & EVENT DATA
+
+51. filetype:log paypal transaction
+52. filetype:log paypal payment
+53. filetype:log paypal api
+54. filetype:log paypal error
+55. filetype:log paypal customer
+56. filetype:txt paypal transaction
+57. filetype:log paypal webhook
+58. filetype:log paypal ipn
+59. filetype:log paypal refund
+60. filetype:log paypal verification
+
+## PAYPAL - SOURCE CODE & INTEGRATION
+
+61. site:github.com filetype:py paypal
+62. site:github.com filetype:js paypal secret
+63. site:github.com filetype:env "PAYPAL_"
+64. site:github.com filetype:config paypal
+65. site:github.com filetype:java paypal
+66. site:github.com filetype:php paypal
+67. site:github.com filetype:rb paypal
+68. site:gitlab.com paypal api
+69. site:bitbucket.org filetype:env paypal
+70. inurl:/.git/ paypal
+
+## PAYPAL - INTERNAL SYSTEMS
+
+71. inurl:admin intitle:paypal
+72. inurl:dashboard paypal filetype:html
+73. inurl:paypal/admin filetype:php
+74. inurl:paypal/panel
+75. inurl:api.paypal intitle:admin
+76. filetype:conf paypal admin
+77. filetype:ini paypal
+78. filetype:yaml paypal
+79. filetype:properties paypal
+80. inurl:/paypal/config
+
+## PAYPAL - IPN & WEBHOOK DATA
+
+81. inurl:pastebin intitle:paypal ipn
+82. inurl:pastebin paypal "notify_url"
+83. inurl:pastebin paypal webhook secret
+84. inurl:pastebin paypal "verified"
+85. filetype:log paypal ipn
+86. filetype:txt paypal ipn
+87. inurl:pastebin paypal listener
+88. inurl:pastebin paypal handler
+
+---
+
+## PAYPAL SPECIFIC IDENTIFIERS
+
+**Key PayPal identifiers to search for:**
+- **Client ID:** APP-
+- **Signature:** API signature format
+- **API Username:** merchant_api_username
+- **Transaction ID:** txn_id
+- **Customer ID:** cust_
+- **Merchant Account:** business@paypal.com
+- **Domain:** paypal.com, api.paypal.com
+- **IPN:** Instant Payment Notification
+
+## USAGE NOTES
+
+These dorks target:
+- **PayPal API credentials and signatures**
+- **OAuth tokens and access credentials**
+- **Customer and merchant account data**
+- **Transaction and payment records**
+- **IPN webhook information**
+- **Configuration files with PayPal integration**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing of PayPal integrations
+- Vulnerability disclosure to PayPal
+- Academic security research
+- Authorized compliance activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to PayPal systems
+- Wire fraud using payment processing
+- Theft of payment credentials
+- Identity theft
+- Computer fraud and abuse
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Computer Fraud (CFAA): Up to 10 years + $250,000+
+- Identity Theft: 15 years additional sentencing
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings to PayPal Security: security@paypal.com
+3. Use responsible disclosure practices
+4. Never exploit or monetize vulnerabilities
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
