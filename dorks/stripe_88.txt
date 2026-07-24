@@ -1,0 +1,175 @@
+# 88 Google Dorks - Stripe Payment Processor Data Disclosure
+# Target: Stripe API keys, customer data, payment records, and internal systems
+# Focus: Live API keys, test credentials, webhook data, and customer information
+
+## STRIPE - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:stripe
+2. inurl:pastebin intitle:stripe api
+3. inurl:pastebin intitle:"sk_live"
+4. inurl:pastebin intitle:"rk_live"
+5. inurl:pastebin "stripe_api_key"
+6. site:pastebin.com "sk_live_"
+7. inurl:hastebin intitle:stripe
+8. site:paste.org stripe credentials
+9. inurl:pastebin "stripe.com" api
+10. inurl:pastebin intitle:stripe webhook
+
+## STRIPE - API KEYS & CREDENTIALS
+
+11. inurl:pastebin "sk_live_" filetype:txt
+12. inurl:pastebin "sk_test_" filetype:txt
+13. inurl:pastebin "rk_live_" filetype:txt
+14. inurl:pastebin "pk_live_"
+15. inurl:pastebin "pk_test_"
+16. inurl:pastebin stripe "restricted_api_key"
+17. site:pastebin.com stripe secret
+18. inurl:pastebin stripe token
+19. inurl:pastebin stripe publishable
+20. inurl:pastebin stripe bearer
+
+## STRIPE - CUSTOMER DATA & ACCOUNTS
+
+21. inurl:pastebin intitle:stripe customer
+22. inurl:pastebin intitle:stripe cardholder
+23. inurl:pastebin intitle:stripe account
+24. inurl:pastebin intitle:stripe user
+25. inurl:pastebin stripe "cust_" database
+26. site:pastebin.com stripe customer dump
+27. inurl:pastebin stripe subscriber
+28. inurl:pastebin stripe subscription
+29. inurl:pastebin stripe invoice
+30. inurl:pastebin stripe payment intent
+
+## STRIPE - WEBHOOKS & EVENT DATA
+
+31. inurl:pastebin intitle:stripe webhook
+32. inurl:pastebin stripe "whsec_"
+33. inurl:pastebin stripe event log
+34. site:pastebin.com stripe webhook secret
+35. inurl:pastebin stripe "charge.succeeded"
+36. inurl:pastebin stripe "charge.failed"
+37. inurl:pastebin stripe "customer.created"
+38. inurl:pastebin stripe "payment_intent.succeeded"
+39. inurl:pastebin stripe endpoint
+40. inurl:pastebin stripe "signing_secret"
+
+## STRIPE - EXPOSED FILES
+
+41. filetype:csv stripe customer
+42. filetype:xlsx stripe api
+43. filetype:json stripe key
+44. filetype:sql stripe customer
+45. filetype:env "STRIPE_SECRET"
+46. filetype:env "STRIPE_PUBLISHABLE"
+47. filetype:txt "sk_live_" OR "sk_test_"
+48. filetype:config stripe
+49. filetype:bak stripe
+50. filetype:backup stripe
+
+## STRIPE - TRANSACTION & PAYMENT LOGS
+
+51. filetype:log stripe payment
+52. filetype:log stripe charge
+53. filetype:log stripe transaction
+54. filetype:log stripe refund
+55. filetype:log stripe dispute
+56. filetype:txt stripe transaction
+57. filetype:log stripe customer
+58. filetype:log stripe invoice
+59. filetype:log stripe balance
+60. filetype:log stripe payout
+
+## STRIPE - SOURCE CODE & INTEGRATIONS
+
+61. site:github.com filetype:py stripe "sk_live"
+62. site:github.com filetype:js stripe secret
+63. site:github.com filetype:env "STRIPE_"
+64. site:github.com filetype:config stripe
+65. site:github.com filetype:java stripe api
+66. site:github.com filetype:php stripe
+67. site:github.com filetype:rb stripe
+68. site:gitlab.com stripe api
+69. site:bitbucket.org filetype:env stripe
+70. inurl:/.git/ stripe
+
+## STRIPE - INTERNAL SYSTEMS & ADMIN
+
+71. inurl:admin intitle:stripe
+72. inurl:dashboard stripe filetype:html
+73. inurl:stripe/admin filetype:php
+74. inurl:stripe/panel
+75. inurl:api.stripe intitle:admin
+76. filetype:conf stripe admin
+77. filetype:ini stripe
+78. filetype:yaml stripe
+79. filetype:properties stripe
+80. inurl:/stripe/config
+
+## STRIPE - CONNECT & PLATFORM DATA
+
+81. inurl:pastebin intitle:stripe connect
+82. inurl:pastebin stripe "acct_" database
+83. inurl:pastebin stripe express account
+84. inurl:pastebin stripe "oauth_" token
+85. filetype:json stripe connect
+86. filetype:sql stripe account
+87. inurl:pastebin stripe "restricted_api"
+88. inurl:pastebin stripe platform
+
+---
+
+## STRIPE SPECIFIC IDENTIFIERS
+
+**Key Stripe identifiers to search for:**
+- **Live Secret Key:** sk_live_
+- **Test Secret Key:** sk_test_
+- **Restricted Key:** rk_live_
+- **Publishable Key:** pk_live_ / pk_test_
+- **Webhook Secret:** whsec_
+- **OAuth Token:** oauth_
+- **Customer ID:** cust_
+- **Account ID:** acct_
+- **Domain:** stripe.com, api.stripe.com
+
+## USAGE NOTES
+
+These dorks target:
+- **Stripe API keys (live and test)**
+- **Customer account information**
+- **Payment transaction records**
+- **Webhook signing secrets**
+- **OAuth tokens and credentials**
+- **Configuration files with Stripe integration**
+- **Platform and marketplace data**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing of Stripe integrations
+- Vulnerability disclosure to Stripe
+- Academic security research
+- Authorized compliance activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to Stripe systems
+- Wire fraud using payment processing
+- Theft of payment credentials
+- Identity theft via compromised data
+- Computer fraud and abuse
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Computer Fraud (CFAA): Up to 10 years + $250,000+
+- Identity Theft: 15 years additional sentencing
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings to Stripe Security: security@stripe.com
+3. Use responsible disclosure practices
+4. Never exploit or monetize vulnerabilities
+5. Comply with all applicable laws
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
