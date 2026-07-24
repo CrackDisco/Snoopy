@@ -1,0 +1,172 @@
+# 88 Google Dorks - Adyen Payment Processor Data Disclosure
+# Target: Adyen API keys, merchant data, payment records, and internal systems
+# Focus: API credentials, customer information, transaction logs, and configurations
+
+## ADYEN - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:adyen
+2. inurl:pastebin intitle:adyen api
+3. inurl:pastebin intitle:adyen credentials
+4. inurl:pastebin "adyen.com" api
+5. site:pastebin.com adyen
+6. inurl:hastebin intitle:adyen
+7. inurl:paste.org intitle:adyen
+8. site:pastebin.com adyen account
+9. inurl:pastebin intitle:adyen merchant
+10. inurl:pastebin adyen webhook
+
+## ADYEN - API CREDENTIALS & KEYS
+
+11. inurl:pastebin adyen "api_key"
+12. inurl:pastebin adyen "api_user"
+13. inurl:pastebin adyen "hmac_key"
+14. inurl:pastebin adyen "client_key"
+15. inurl:pastebin adyen "access_token"
+16. inurl:pastebin adyen "x-api-key"
+17. site:pastebin.com adyen secret
+18. inurl:pastebin adyen bearer
+19. inurl:pastebin adyen authentication
+20. inurl:pastebin adyen "restricted_key"
+
+## ADYEN - MERCHANT & ACCOUNT DATA
+
+21. inurl:pastebin intitle:adyen merchant
+22. inurl:pastebin intitle:adyen account
+23. inurl:pastebin adyen "merchant_account"
+24. inurl:pastebin adyen "merchant_id"
+25. site:pastebin.com adyen merchant dump
+26. inurl:pastebin adyen business
+27. inurl:pastebin adyen seller
+28. inurl:pastebin adyen company
+29. inurl:pastebin adyen "store_id"
+30. inurl:pastebin adyen submerchant
+
+## ADYEN - CUSTOMER & PAYMENT DATA
+
+31. inurl:pastebin intitle:adyen customer
+32. inurl:pastebin intitle:adyen payment
+33. inurl:pastebin adyen "customer_id"
+34. site:pastebin.com adyen customer database
+35. inurl:pastebin adyen transaction
+36. inurl:pastebin adyen order
+37. inurl:pastebin adyen invoice
+38. inurl:pastebin adyen refund
+39. inurl:pastebin adyen shopper
+40. inurl:pastebin adyen cardholder
+
+## ADYEN - PAYMENTS & TRANSACTION LOGS
+
+41. inurl:pastebin intitle:adyen transaction
+42. inurl:pastebin intitle:adyen payout
+43. inurl:pastebin adyen "psp_reference"
+44. inurl:pastebin adyen settlement
+45. inurl:pastebin adyen dispute
+46. site:pastebin.com adyen transaction
+47. inurl:pastebin adyen chargeback
+48. inurl:pastebin adyen reconciliation
+49. inurl:pastebin adyen balance
+50. inurl:pastebin adyen statement
+
+## ADYEN - EXPOSED FILES
+
+51. filetype:csv adyen customer
+52. filetype:xlsx adyen merchant
+53. filetype:json adyen api
+54. filetype:sql adyen customer
+55. filetype:env "ADYEN_"
+56. filetype:env "ADYEN_API_KEY"
+57. filetype:txt adyen credentials
+58. filetype:config adyen
+59. filetype:bak adyen
+60. filetype:backup adyen
+
+## ADYEN - LOGS & EVENT DATA
+
+61. filetype:log adyen payment
+62. filetype:log adyen transaction
+63. filetype:log adyen error
+64. filetype:log adyen customer
+65. filetype:log adyen webhook
+66. filetype:txt adyen transaction
+67. filetype:log adyen settlement
+68. filetype:log adyen payout
+69. filetype:log adyen api
+70. filetype:log adyen authentication
+
+## ADYEN - SOURCE CODE & INTEGRATION
+
+71. site:github.com filetype:py adyen
+72. site:github.com filetype:js adyen secret
+73. site:github.com filetype:env "ADYEN_"
+74. site:github.com filetype:config adyen
+75. site:github.com filetype:java adyen
+76. site:github.com filetype:php adyen
+77. site:github.com filetype:rb adyen
+78. site:gitlab.com adyen api
+79. site:bitbucket.org filetype:env adyen
+80. inurl:/.git/ adyen
+
+## ADYEN - INTERNAL SYSTEMS & WEBHOOKS
+
+81. inurl:admin intitle:adyen
+82. inurl:dashboard adyen filetype:html
+83. inurl:adyen/admin filetype:php
+84. inurl:webhook adyen
+85. inurl:api.adyen intitle:admin
+86. filetype:conf adyen admin
+87. filetype:yaml adyen webhook
+88. inurl:adyen/callback
+
+---
+
+## ADYEN SPECIFIC IDENTIFIERS
+
+**Key Adyen identifiers to search for:**
+- **API Key:** Adyen API key format
+- **X-API-Key Header:** x-api-key
+- **HMAC Key:** hmac_key
+- **Merchant Account:** merchant_account_
+- **PSP Reference:** psp_reference
+- **Client Key:** client_key
+- **Domain:** adyen.com, api.adyen.com
+
+## USAGE NOTES
+
+These dorks target:
+- **Adyen API keys and authentication credentials**
+- **Merchant account information**
+- **Customer and payment data**
+- **Transaction records and settlements**
+- **Webhook and callback information**
+- **Configuration files with Adyen integration**
+- **Payout and reconciliation data**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing of Adyen integrations
+- Vulnerability disclosure to Adyen
+- Academic security research
+- Authorized compliance activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to Adyen systems
+- Wire fraud using payment processing
+- Theft of payment credentials
+- Identity theft
+- Computer fraud and abuse
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Computer Fraud (CFAA): Up to 10 years + $250,000+
+- Identity Theft: 15 years additional sentencing
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings to Adyen Security: security@adyen.com
+3. Use responsible disclosure practices
+4. Never exploit or monetize vulnerabilities
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
