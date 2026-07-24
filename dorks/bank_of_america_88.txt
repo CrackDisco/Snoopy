@@ -1,0 +1,184 @@
+# 88 Google Dorks - Bank of America Data Disclosure
+# Target: Bank of America (BofA) & Customer Financial Data Leaks
+# Focus: Customer accounts, login credentials, financial records, internal systems
+
+## BANK OF AMERICA - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:bankofamerica
+2. inurl:pastebin intitle:"bank of america"
+3. inurl:pastebin intitle:bofa
+4. inurl:pastebin intitle:bofa login
+5. inurl:pastebin intitle:bofa credentials
+6. inurl:pastebin intitle:bofa customer
+7. site:pastebin.com "bankofamerica.com"
+8. site:paste.org intitle:bofa
+9. inurl:hastebin intitle:"bank of america"
+10. inurl:pastebin "bofa" intitle:dump
+
+## BANK OF AMERICA - CUSTOMER ACCOUNTS & CREDENTIALS
+
+11. inurl:pastebin intitle:bofa account
+12. inurl:pastebin intitle:bofa username password
+13. inurl:pastebin intitle:bofa online banking
+14. inurl:pastebin intitle:bofa customer account
+15. inurl:pastebin "bankofamerica.com" username
+16. site:pastebin.com bofa login credentials
+17. inurl:pastebin intitle:bofa user database
+18. inurl:pastebin intitle:bofa customer list
+19. inurl:pastebin "bank of america" password
+20. inurl:pastebin bofa authentication
+
+## BANK OF AMERICA - ROUTING & ACCOUNT NUMBERS
+
+21. inurl:pastebin intitle:bofa routing number
+22. inurl:pastebin intitle:bofa account number
+23. inurl:pastebin intitle:bofa aba
+24. inurl:pastebin "026009593" (BofA routing number)
+25. inurl:pastebin bofa "swift code"
+26. site:pastebin.com bofa bank account
+27. inurl:pastebin intitle:bofa wire transfer
+28. inurl:pastebin bofa direct deposit
+29. inurl:pastebin intitle:bofa iban
+30. inurl:pastebin bofa correspondent bank
+
+## BANK OF AMERICA - CREDIT CARDS & DEBIT CARDS
+
+31. inurl:pastebin intitle:bofa credit card
+32. inurl:pastebin intitle:bofa debit card
+33. inurl:pastebin intitle:bofa visa
+34. inurl:pastebin intitle:bofa mastercard
+35. inurl:pastebin intitle:bofa card dump
+36. inurl:pastebin bofa "4" filetype:txt
+37. site:pastebin.com bofa card cardholder
+38. inurl:pastebin bofa credit union
+39. inurl:pastebin intitle:bofa rewards card
+40. inurl:pastebin bofa secured card
+
+## BANK OF AMERICA - INTERNAL SYSTEMS & DOCUMENTS
+
+41. inurl:pastebin intitle:bofa database
+42. inurl:pastebin intitle:bofa internal
+43. inurl:pastebin intitle:bofa admin
+44. inurl:pastebin intitle:bofa server
+45. inurl:pastebin intitle:bofa vpn
+46. site:pastebin.com bofa configuration
+47. inurl:pastebin intitle:bofa employee
+48. inurl:pastebin bofa "internal use only"
+49. inurl:pastebin intitle:bofa confidential
+50. inurl:pastebin bofa restricted
+
+## BANK OF AMERICA - EXPOSED FILES
+
+51. filetype:csv "bankofamerica" OR "bofa"
+52. filetype:xlsx bofa customer
+53. filetype:xls bofa account
+54. filetype:sql bofa customer
+55. filetype:json bofa account
+56. filetype:txt bofa credentials
+57. filetype:bak bofa database
+58. filetype:backup bofa
+59. filetype:xml bofa customer
+60. filetype:sql "bofa" account_number
+
+## BANK OF AMERICA - TRANSACTION & ACCOUNT LOGS
+
+61. filetype:log bofa transaction
+62. filetype:log bankofamerica
+63. filetype:log bofa customer activity
+64. filetype:log bofa auth failed
+65. filetype:log bofa login
+66. filetype:txt bofa transaction
+67. filetype:log bofa account
+68. filetype:log bofa transfer
+69. filetype:log bofa deposit
+70. filetype:log bofa withdrawal
+
+## BANK OF AMERICA - SOURCE CODE & API KEYS
+
+71. site:github.com filetype:py bofa
+72. site:github.com filetype:js "bankofamerica" OR "bofa"
+73. site:github.com filetype:env bofa
+74. site:github.com filetype:config bofa
+75. site:github.com filetype:java bofa
+76. site:gitlab.com bofa api
+77. site:bitbucket.org filetype:env bofa
+78. site:github.com "bofa_api_key"
+79. site:github.com "bankofamerica_token"
+80. inurl:/.git/ bofa
+
+## BANK OF AMERICA - CONFIGURATION FILES & CREDENTIALS
+
+81. filetype:conf bofa
+82. filetype:ini bofa
+83. filetype:config bofa database
+84. web.config bofa
+85. filetype:properties bofa
+86. filetype:yaml bofa
+87. filetype:env "BOFA_" OR "BANKOFAMERICA_"
+88. filetype:txt bofa "api_key" OR "password"
+
+---
+
+## BANK OF AMERICA SPECIFIC IDENTIFIERS
+
+**Key BofA identifiers to search for:**
+- **Routing Number:** 026009593 (primary)
+- **SWIFT Code:** BOFAUS3N
+- **Domain:** bankofamerica.com
+- **Ticker:** BAC
+- **Brand Names:** Bank of America, BofA, America First
+- **Card Prefixes:** 4 (Visa), 5 (Mastercard)
+- **Common Services:** Online Banking, Mobile App, SafePass, eSecure
+
+## USAGE NOTES
+
+These dorks specifically target:
+- **Bank of America customer accounts and credentials**
+- **Financial account information (routing, account numbers)**
+- **Credit and debit card data from BofA**
+- **Internal systems and employee data**
+- **Transaction records and banking logs**
+- **API keys and authentication tokens**
+- **Configuration files with database credentials**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **FEDERAL LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing and security research
+- Vulnerability disclosure to Bank of America
+- Academic security research
+- Authorized compliance and regulatory activities
+- Law enforcement operations
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to banking systems
+- Wire fraud (18 U.S.C. § 1343)
+- Bank fraud (18 U.S.C. § 1344)
+- Identity theft (18 U.S.C. § 1028)
+- Accessing computer systems without authorization (CFAA)
+- Money laundering or financial crimes
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Bank Fraud: Up to 30 years imprisonment + $1,000,000 fine
+- Identity Theft: 15 years additional sentencing
+- CFAA violations: Up to 10 years imprisonment + $250,000+ fines
+- Civil liability and restitution
+
+**Important Actions:**
+1. Obtain explicit written authorization from Bank of America before testing
+2. Report findings to BofA Security Team: fraud_report@bankofamerica.com
+3. Use responsible disclosure practices
+4. Follow all state, federal, and international banking laws
+5. Comply with Gramm-Leach-Bliley Act (GLBA)
+6. Comply with Fair Credit Reporting Act (FCRA)
+7. Never exploit, monetize, or share discovered vulnerabilities
+
+**Bank of America Security Contact:**
+- Email: fraud_report@bankofamerica.com
+- Phone: 1-800-432-1000
+- Security: security@bankofamerica.com
+
+Unauthorized access to banking systems is a federal crime under the Computer Fraud and Abuse Act (CFAA) and Banking laws.
