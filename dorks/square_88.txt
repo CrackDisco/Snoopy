@@ -1,0 +1,173 @@
+# 88 Google Dorks - Square Payment Processor Data Disclosure
+# Target: Square API keys, POS data, customer records, and merchant information
+# Focus: OAuth tokens, access keys, customer database, and payment terminals
+
+## SQUARE - PASTEBIN & PASTE SITES
+
+1. inurl:pastebin intitle:square
+2. inurl:pastebin intitle:square api
+3. inurl:pastebin intitle:square credentials
+4. inurl:pastebin "square.com" api
+5. site:pastebin.com square
+6. inurl:hastebin intitle:square
+7. inurl:paste.org intitle:square
+8. site:pastebin.com square account
+9. inurl:pastebin intitle:square merchant
+10. inurl:pastebin square webhook
+
+## SQUARE - API CREDENTIALS & KEYS
+
+11. inurl:pastebin square "sq_"
+12. inurl:pastebin square "access_token"
+13. inurl:pastebin square "api_key"
+14. inurl:pastebin square "app_id"
+15. inurl:pastebin square "oauth"
+16. inurl:pastebin square "access_token" filetype:txt
+17. site:pastebin.com square secret
+18. inurl:pastebin square bearer
+19. inurl:pastebin square "personal_access_token"
+20. inurl:pastebin square developer
+
+## SQUARE - MERCHANT & LOCATION DATA
+
+21. inurl:pastebin intitle:square merchant
+22. inurl:pastebin intitle:square location
+23. inurl:pastebin intitle:square account
+24. inurl:pastebin square "merchant_id"
+25. site:pastebin.com square merchant dump
+26. inurl:pastebin square business
+27. inurl:pastebin square seller
+28. inurl:pastebin square store
+29. inurl:pastebin square "location_id"
+30. inurl:pastebin square branch
+
+## SQUARE - CUSTOMER & PAYMENT DATA
+
+31. inurl:pastebin intitle:square customer
+32. inurl:pastebin intitle:square payment
+33. inurl:pastebin square "customer_id"
+34. site:pastebin.com square customer database
+35. inurl:pastebin square transaction
+36. inurl:pastebin square order
+37. inurl:pastebin square invoice
+38. inurl:pastebin square subscription
+39. inurl:pastebin square card
+40. inurl:pastebin square tender
+
+## SQUARE - POS & TERMINAL DATA
+
+41. inurl:pastebin intitle:square pos
+42. inurl:pastebin intitle:square terminal
+43. inurl:pastebin square "device_id"
+44. inurl:pastebin square register
+45. inurl:pastebin square "terminal_id"
+46. site:pastebin.com square device
+47. inurl:pastebin square reader
+48. inurl:pastebin square payment terminal
+49. inurl:pastebin square checkout
+50. inurl:pastebin square receipt
+
+## SQUARE - EXPOSED FILES
+
+51. filetype:csv square customer
+52. filetype:xlsx square merchant
+53. filetype:json square api
+54. filetype:sql square customer
+55. filetype:env "SQUARE_"
+56. filetype:env "SQUARE_ACCESS_TOKEN"
+57. filetype:txt square credentials
+58. filetype:config square
+59. filetype:bak square
+60. filetype:backup square
+
+## SQUARE - LOGS & TRANSACTION RECORDS
+
+61. filetype:log square transaction
+62. filetype:log square payment
+63. filetype:log square charge
+64. filetype:log square refund
+65. filetype:log square customer
+66. filetype:txt square transaction
+67. filetype:log square settlement
+68. filetype:log square inventory
+69. filetype:log square employee
+70. filetype:log square register
+
+## SQUARE - SOURCE CODE & INTEGRATION
+
+71. site:github.com filetype:py square
+72. site:github.com filetype:js square secret
+73. site:github.com filetype:env "SQUARE_"
+74. site:github.com filetype:config square
+75. site:github.com filetype:java square
+76. site:github.com filetype:php square
+77. site:github.com filetype:rb square
+78. site:gitlab.com square api
+79. site:bitbucket.org filetype:env square
+80. inurl:/.git/ square
+
+## SQUARE - INTERNAL SYSTEMS & WEBHOOKS
+
+81. inurl:admin intitle:square
+82. inurl:dashboard square filetype:html
+83. inurl:square/admin filetype:php
+84. inurl:webhook square
+85. inurl:api.squareup intitle:admin
+86. filetype:conf square admin
+87. filetype:yaml square webhook
+88. inurl:square/callback
+
+---
+
+## SQUARE SPECIFIC IDENTIFIERS
+
+**Key Square identifiers to search for:**
+- **Access Token:** sq_
+- **OAuth Token:** oauth_
+- **Merchant ID:** merchant_
+- **Location ID:** location_
+- **Device ID:** device_
+- **Customer ID:** cust_
+- **API Version:** 2024, 2023, etc.
+- **Domain:** squareup.com, api.squareup.com
+
+## USAGE NOTES
+
+These dorks target:
+- **Square API keys and OAuth tokens**
+- **Merchant and location data**
+- **Customer account information**
+- **Payment and transaction records**
+- **POS terminal configuration**
+- **Webhook and callback URLs**
+- **Configuration files with Square integration**
+
+## CRITICAL DISCLAIMER
+
+⚠️ **LEGAL WARNING**
+
+These Google dorks are provided **EXCLUSIVELY** for:
+- Authorized penetration testing of Square integrations
+- Vulnerability disclosure to Square
+- Academic security research
+- Authorized compliance activities
+
+**ILLEGAL USE INCLUDES:**
+- Unauthorized access to Square systems
+- Wire fraud using payment processing
+- Theft of payment credentials
+- Identity theft
+- Computer fraud and abuse
+
+**Federal Penalties:**
+- Wire Fraud: Up to 20 years imprisonment
+- Computer Fraud (CFAA): Up to 10 years + $250,000+
+- Identity Theft: 15 years additional sentencing
+
+**Always:**
+1. Obtain explicit written authorization before testing
+2. Report findings to Square Security: security@squareup.com
+3. Use responsible disclosure practices
+4. Never exploit or monetize vulnerabilities
+
+Unauthorized access to computer systems is a federal crime under the Computer Fraud and Abuse Act (CFAA).
